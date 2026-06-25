@@ -1,0 +1,36 @@
+{
+  "posts": [
+    {
+      "slug": "recycling-challenges-london",
+      "category": "Waste Management",
+      "title": "Recycling Challenges in London and How We Support Sustainability",
+      "excerpt": "London's recycling rate has recently fallen to 32.6%, the lowest since 2016, despite simpler recycling schemes. Learn how responsible waste management makes a difference.",
+      "date": "April 30, 2026",
+      "author": "Waste Management Team"
+    },
+    {
+      "slug": "skip-hire-permits-south-london",
+      "category": "Skip Hire",
+      "title": "Understanding Skip Hire Permits in South London and Surrey",
+      "excerpt": "If you need a skip for your project in South London or Surrey, it's important to understand when a permit is required and how to arrange one.",
+      "date": "April 30, 2026",
+      "author": "Waste Management Team"
+    },
+    {
+      "slug": "fly-tipping-responsible-skip-hire",
+      "category": "Skip Hire",
+      "title": "Tackling Fly-Tipping – Why Responsible Skip Hire Matters",
+      "excerpt": "Fly-tipping incidents in England have risen by 9% in 2024/25. Discover why using a licensed skip hire company protects you and the environment.",
+      "date": "April 30, 2026",
+      "author": "Waste Management Team"
+    },
+    {
+      "slug": "get-rid-unwanted-items",
+      "category": "Waste Management",
+      "title": "How to Get Rid of Unwanted Items in Your Home",
+      "excerpt": "Decluttering your home? Here are the best ways to dispose of unwanted items responsibly, from skip hire to recycling centres.",
+      "date": "March 15, 2026",
+      "author": "Waste Management Team"
+    }
+  ]
+}

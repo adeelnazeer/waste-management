@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #4fa64e;
+  --color-brand-dark: #3d8a3c;
+  --color-brand-light: #6bb86a;
+  --color-brand-soft: #edf7ed;
+  --color-black: #111111;
+  --color-white: #ffffff;
+  --color-text-light: #ffffff;
+  --color-text-muted: #11111199;
+  --color-text-dark: #111111;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f5f5f5;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  @apply bg-surface text-text-dark font-sans antialiased;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display font-bold tracking-tight text-black;
+  }
+  h1 {
+    @apply text-3xl leading-tight md:text-5xl lg:text-6xl;
+  }
+  h2 {
+    @apply text-2xl leading-tight md:text-4xl;
+  }
+  h3 {
+    @apply text-xl leading-snug md:text-2xl;
+  }
+  h4 {
+    @apply text-lg md:text-xl;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-md bg-brand px-7 py-3.5 text-sm font-semibold text-white transition-all hover:bg-brand-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-md border-2 border-white bg-transparent px-7 py-3.5 text-sm font-semibold text-white transition-all hover:bg-white hover:text-black;
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center gap-2 rounded-md border-2 border-brand px-7 py-3.5 text-sm font-semibold text-brand transition-all hover:bg-brand hover:text-white;
+}
+
+.btn-dark {
+  @apply inline-flex items-center justify-center gap-2 rounded-md bg-black px-7 py-3.5 text-sm font-semibold text-white transition-all hover:bg-black/80;
+}
+
+.section-padding {
+  @apply px-4 py-16 md:px-8 md:py-24 lg:px-12;
+}
+
+.container-narrow {
+  @apply mx-auto max-w-6xl;
+}
+
+.section-label {
+  @apply mb-3 inline-block text-xs font-bold uppercase tracking-[0.2em] text-brand;
+}
+
+.gradient-hero {
+  background: linear-gradient(135deg, #111111 0%, #1a1a1a 50%, #111111 100%);
+}
+
+.card-hover {
+  @apply transition-all duration-200 hover:-translate-y-1 hover:shadow-lg;
+}
+
+.divider-accent {
+  @apply mx-auto h-1 w-16 rounded-full bg-brand;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4fa64e;
+  border-radius: 4px;
+}

@@ -1,0 +1,205 @@
+{
+  "services": [
+    {
+      "slug": "skip-hire",
+      "title": "Skip Hire",
+      "shortDescription": "Ideal for home renovations, garden clearances, and general waste removal. Our skips provide a simple, cost-effective solution for keeping your project tidy, with fast delivery and collection available.",
+      "image": "/images/skip-hire.jpg",
+      "ctaPrimary": { "label": "Order Now", "href": "/contact" },
+      "ctaSecondary": { "label": "More Info", "href": "/services/skip-hire" },
+      "hero": {
+        "title": "Skip Hire Services",
+        "subtitle": "Fast, reliable skip hire for domestic and commercial projects across London and Surrey."
+      },
+      "content": {
+        "intro": "Waste Management always has a large number of skips in various sizes in stock for immediate delivery or exchange. Whether you're clearing a garden, renovating your home, or managing a construction site, we have the right skip for your needs.",
+        "features": [
+          "Skips available from 4 yard to 16 yard",
+          "Same-day and next-day delivery",
+          "Flexible hire periods",
+          "Skip permits arranged where necessary",
+          "Professional and courteous drivers",
+          "Competitive, transparent pricing"
+        ],
+        "sizes": [
+          { "size": "4 Yard", "description": "Ideal for small garden clearances and minor DIY projects. Holds approximately 40 bin bags." },
+          { "size": "6 Yard", "description": "Perfect for medium-sized renovations and household clearances. Holds approximately 60 bin bags." },
+          { "size": "8 Yard", "description": "Our most popular size for larger home projects and small building works. Holds approximately 80 bin bags." },
+          { "size": "12 Yard", "description": "Suitable for substantial clearances and commercial waste. Holds approximately 110–120 bin bags." },
+          { "size": "16 Yard", "description": "Large capacity for major construction and demolition projects." }
+        ]
+      }
+    },
+    {
+      "slug": "roro-hire",
+      "title": "RoRo Hire",
+      "shortDescription": "Designed for large commercial and construction projects, our RoRo containers handle high volumes of bulky and heavy waste. Rear-door access makes loading quick and efficient.",
+      "image": "/images/roro-hire.jpg",
+      "ctaPrimary": { "label": "Contact Us", "href": "/contact" },
+      "ctaSecondary": { "label": "More Info", "href": "/services/roro-hire" },
+      "hero": {
+        "title": "Roll-on Roll-off (RoRo) Hire",
+        "subtitle": "High-capacity containers for large-scale commercial and construction waste management."
+      },
+      "content": {
+        "intro": "Our Roll-on Roll-off containers are designed for projects that generate significant volumes of waste. With rear-door access for easy loading and robust construction for heavy materials, RoRo hire is the efficient choice for commercial sites.",
+        "features": [
+          "20 yard and 40 yard containers available",
+          "Rear-door access for efficient loading",
+          "Suitable for bulky and heavy waste",
+          "Regular collection and exchange schedules",
+          "Fully licensed waste disposal",
+          "Ideal for construction and demolition"
+        ],
+        "sizes": [
+          { "size": "20 Yard RoRo", "description": "Compact RoRo container ideal for mid-size commercial projects with restricted access." },
+          { "size": "40 Yard RoRo", "description": "Maximum capacity container for large construction sites and industrial waste." }
+        ]
+      }
+    },
+    {
+      "slug": "wait-and-load",
+      "title": "Wait and Load Service",
+      "shortDescription": "Our driver waits while you load the vehicle, then takes your waste away immediately. Perfect when you need waste removed quickly without hiring a skip.",
+      "image": "/images/wait-and-load.jpg",
+      "ctaPrimary": { "label": "Contact Us", "href": "/contact" },
+      "ctaSecondary": { "label": "More Info", "href": "/services/wait-and-load" },
+      "hero": {
+        "title": "Wait and Load Service",
+        "subtitle": "Quick waste removal without the wait – our team loads and goes."
+      },
+      "content": {
+        "intro": "The Wait and Load service is perfect when you need waste removed quickly and don't have space for a skip. Our driver arrives, waits while you or our team loads the vehicle, and takes your waste away immediately.",
+        "features": [
+          "No skip permit required",
+          "Ideal for restricted access locations",
+          "Same-day service available",
+          "Flexible loading time",
+          "Cost-effective for smaller loads",
+          "Professional waste disposal"
+        ],
+        "sizes": []
+      }
+    },
+    {
+      "slug": "third-party-tipping",
+      "title": "3rd Party Tipping",
+      "shortDescription": "Licensed waste transfer station accepting third-party tipping for trade and commercial customers. Competitive rates with full waste documentation.",
+      "image": "/images/tipping.jpg",
+      "ctaPrimary": { "label": "Contact Us", "href": "/contact" },
+      "ctaSecondary": { "label": "More Info", "href": "/services/third-party-tipping" },
+      "hero": {
+        "title": "3rd Party Tipping",
+        "subtitle": "Licensed waste transfer for trade and commercial customers."
+      },
+      "content": {
+        "intro": "Our licensed waste transfer facility accepts third-party tipping from trade customers, builders, and waste carriers. We provide full waste transfer documentation and competitive tipping rates.",
+        "features": [
+          "Licensed Environment Agency facility",
+          "Waste transfer notes provided",
+          "Competitive tipping rates",
+          "Wide range of waste types accepted",
+          "Fast turnaround times",
+          "Over 98% of waste recycled"
+        ],
+        "sizes": []
+      }
+    },
+    {
+      "slug": "grab-loader-muckaway",
+      "title": "Grab Loader & Muckaway",
+      "shortDescription": "Efficient grab lorry services for site clearance, muckaway, and bulk waste removal. Reach over walls and fences for hard-to-access areas.",
+      "image": "/images/grab-loader.jpg",
+      "ctaPrimary": { "label": "Contact Us", "href": "/contact" },
+      "ctaSecondary": { "label": "More Info", "href": "/services/grab-loader-muckaway" },
+      "hero": {
+        "title": "Grab Loader & Muckaway Services",
+        "subtitle": "Professional site clearance and bulk waste removal with grab lorries."
+      },
+      "content": {
+        "intro": "Our grab loader and muckaway services provide an efficient alternative to traditional skip hire. Grab lorries can reach over walls and fences, making them ideal for sites with limited access or where speed is essential.",
+        "features": [
+          "8-wheel and 4-wheel grab lorries",
+          "Reach over walls and obstacles",
+          "Ideal for soil, rubble, and hardcore",
+          "Faster than manual loading",
+          "Site clearance specialists",
+          "Fully licensed operators"
+        ],
+        "sizes": []
+      }
+    },
+    {
+      "slug": "site-clearance",
+      "title": "Site Clearance",
+      "shortDescription": "We provide professional site clearance services for construction, commercial, and industrial projects. Our team removes waste quickly and safely, helping keep your site clear and compliant.",
+      "image": "/images/site-clearance.jpg",
+      "ctaPrimary": { "label": "Contact Us", "href": "/contact" },
+      "ctaSecondary": { "label": "More Info", "href": "/contact" },
+      "hero": {
+        "title": "Site Clearance",
+        "subtitle": "Professional clearance for construction, commercial, and industrial projects."
+      },
+      "content": {
+        "intro": "Our site clearance team handles everything from small garden clearances to large commercial and industrial projects. We work quickly and safely to keep your site clear, compliant, and ready for the next phase of work.",
+        "features": [
+          "Construction site clearance",
+          "Commercial and industrial projects",
+          "Hazardous waste assessment",
+          "Full site documentation",
+          "Flexible scheduling",
+          "Competitive project quotes"
+        ],
+        "sizes": []
+      }
+    },
+    {
+      "slug": "trade-waste",
+      "title": "Trade Waste",
+      "shortDescription": "Reliable trade waste collections for businesses of all sizes. We offer flexible waste management solutions to help keep your premises clean, organised, and environmentally responsible.",
+      "image": "/images/trade-waste.jpg",
+      "ctaPrimary": { "label": "Read More", "href": "/contact" },
+      "ctaSecondary": { "label": "Contact Us", "href": "/contact" },
+      "hero": {
+        "title": "Trade Waste Collections",
+        "subtitle": "Flexible waste management solutions for businesses of all sizes."
+      },
+      "content": {
+        "intro": "Our trade waste collection service is designed for businesses that need regular, reliable waste removal. From small offices to large industrial premises, we tailor our service to your schedule and waste volumes.",
+        "features": [
+          "Regular scheduled collections",
+          "Flexible contract terms",
+          "Various container sizes",
+          "Full waste audit support",
+          "Environmentally responsible disposal",
+          "Competitive business rates"
+        ],
+        "sizes": []
+      }
+    },
+    {
+      "slug": "caged-van-hire",
+      "title": "Caged Van Hire",
+      "shortDescription": "Perfect where skips aren't practical, our caged vans offer a flexible waste removal solution for site clearances, bulky waste collections, and restricted-access locations.",
+      "image": "/images/caged-van.jpg",
+      "ctaPrimary": { "label": "Contact Us", "href": "/contact" },
+      "ctaSecondary": { "label": "More Info", "href": "/contact" },
+      "hero": {
+        "title": "Caged Van Hire",
+        "subtitle": "Flexible waste removal for restricted-access locations."
+      },
+      "content": {
+        "intro": "When a skip isn't practical – due to access restrictions, parking limitations, or the nature of your waste – our caged vans provide the perfect alternative. Ideal for bulky items, site clearances, and locations where skips cannot be placed.",
+        "features": [
+          "7.5 tonne caged vehicles",
+          "Ideal for restricted access",
+          "Bulky waste collections",
+          "No permit required",
+          "Same-day availability",
+          "Driver-assisted loading available"
+        ],
+        "sizes": []
+      }
+    }
+  ]
+}

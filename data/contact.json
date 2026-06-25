@@ -1,0 +1,58 @@
+{
+  "hero": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch for a free, no-obligation quote. Same-day and next-day services available."
+  },
+  "form": {
+    "title": "Send an Enquiry",
+    "description": "Fill in the form below and our team will get back to you as soon as possible.",
+    "fields": {
+      "name": { "label": "Full Name", "placeholder": "Your full name" },
+      "email": { "label": "Email Address", "placeholder": "your@email.com" },
+      "phone": { "label": "Phone Number", "placeholder": "Your phone number" },
+      "service": {
+        "label": "Service Required",
+        "options": [
+          "Skip Hire",
+          "RoRo Hire",
+          "Wait and Load",
+          "3rd Party Tipping",
+          "Grab Loader & Muckaway",
+          "Site Clearance",
+          "Trade Waste",
+          "Caged Van Hire",
+          "Other"
+        ]
+      },
+      "message": { "label": "Message", "placeholder": "Tell us about your project and requirements..." }
+    },
+    "submitLabel": "Send Enquiry"
+  },
+  "contactInfo": {
+    "title": "Get In Touch",
+    "items": [
+      {
+        "type": "phone",
+        "label": "Call Us",
+        "value": "0208 685 9393",
+        "href": "tel:02086859393"
+      },
+      {
+        "type": "email",
+        "label": "Email Us",
+        "value": "info@wastemanagement.co.uk",
+        "href": "mailto:info@wastemanagement.co.uk"
+      },
+      {
+        "type": "address",
+        "label": "Visit Us",
+        "value": "Unit 2 Abbey Industrial Estate, 24 Willow Lane, Mitcham, Surrey, CR4 4NA"
+      },
+      {
+        "type": "hours",
+        "label": "Opening Hours",
+        "value": "Mon–Fri 7 AM to 5 PM | Sat 7 AM to 1 PM"
+      }
+    ]
+  }
+}

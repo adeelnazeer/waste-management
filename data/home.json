@@ -1,0 +1,58 @@
+{
+  "hero": {
+    "label": "What We Do",
+    "title": "Order a skip today",
+    "subtitle": "Your trusted choice for skip and RoRo hire, delivering reliable service, expert support, and great value for money.",
+    "ctaPrimary": { "label": "Book Now", "href": "/contact" },
+    "ctaSecondary": { "label": "0208 685 9393", "href": "tel:02086859393" },
+    "badges": ["Same Day Delivery", "Competitive Prices"]
+  },
+  "intro": {
+    "label": "Waste Management Services & Skip Hire Company",
+    "title": "Waste Management Services & Skip Hire Company",
+    "paragraphs": [
+      "Waste Management provides a complete waste management service, including skip hire, Roll-on Roll-off containers, caged vans and caged lorries.",
+      "Fully licensed by the Environment Agency (EA), we provide a prompt, reliable and competitively priced service across South West London, South East London and Surrey."
+    ],
+    "tagline": "One waste, one call, we do it all…"
+  },
+  "servicesSection": {
+    "label": "Our Services",
+    "title": "Waste Management Skip Hire Services",
+    "description": "We always have a large number of skips in various sizes in stock for immediate delivery or exchange."
+  },
+  "quoteCta": {
+    "icon": "♻",
+    "title": "Need Waste Removed Fast?",
+    "description": "Get a free, no-obligation quote for waste clearance, trade waste collections, skip hire and site clearances. Same-day and next-day services available.",
+    "ctaPrimary": { "label": "Get Quote", "href": "/contact" },
+    "ctaSecondary": { "label": "0208 685 9393", "href": "tel:02086859393" }
+  },
+  "testimonialsSection": {
+    "label": "Satisfied Clients",
+    "title": "What Our Customers Say"
+  },
+  "whyChoose": {
+    "label": "Why Choose Us",
+    "title": "Why Choose Waste Management as your skip hire company?",
+    "points": [
+      "If you want your waste legally collected and disposed of with over 98% of all waste recycled, then choose Waste Management.",
+      "If you want same-day delivery skip hire at competitive prices, look no further. Our skips are delivered, exchanged and collected by professional and courteous drivers.",
+      "If you need advice and support from a reliable company you will gladly recommend to others, choose Waste Management."
+    ],
+    "cta": { "label": "Contact Us", "href": "/contact" }
+  },
+  "localCompany": {
+    "title": "Waste Management – A Local & Reliable Skip Hire Company",
+    "cta": { "label": "Contact Us", "href": "/contact" }
+  },
+  "contactBanner": {
+    "title": "Please Feel Free to Get in Touch",
+    "description": "For more information about any of our products contact our team today! Call: 020 8685 9393 or Email: info@wastemanagement.co.uk, alternatively send a Message via our enquiry form.",
+    "cta": { "label": "Enquiry Form", "href": "/contact" }
+  },
+  "blogSection": {
+    "label": "Our Blog",
+    "title": "Latest News & Advice"
+  }
+}

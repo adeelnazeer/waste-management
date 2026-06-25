@@ -1,0 +1,18 @@
+{
+  "hero": {
+    "title": "Areas We Cover",
+    "subtitle": "We provide skip hire and waste management services across South West London, South East London, and Surrey."
+  },
+  "description": "Waste Management delivers prompt, reliable skip hire and waste clearance services to homes and businesses throughout the following areas. Don't see your area listed? Contact us – we may still be able to help.",
+  "areas": [
+    "Addlestone", "Ashtead", "Banstead", "Barnes", "Balham", "Battersea", "Beckenham", "Brixton", "Brentford", "Croydon",
+    "Caterham", "Coulsdon", "Carshalton", "Cheam", "Cobham", "Clapham", "Chessington", "Chelsea", "Crystal Palace",
+    "Dulwich", "Ewell", "Epsom", "East Sheen", "East Molesey", "Esher", "Feltham", "Fulham", "Hampton", "Herne Hill",
+    "Hounslow", "Isleworth", "Kingston", "Kenley", "Kingston Upon Thames", "Lewisham", "Leatherhead", "Morden", "Mitcham",
+    "New Malden", "North Cheam", "Norwood", "Penge", "Putney", "Peckham", "Purley", "Richmond", "Raynes Park", "South Croydon",
+    "Sutton", "Streatham", "Southfields", "Staines On Thames", "Sunbury", "South Cheam", "Stoneleigh", "Surbiton",
+    "Shepperton", "Sydenham", "South Norwood", "Selhurst", "Tolworth", "Tadworth", "Teddington", "Tooting", "Tulse Hill",
+    "Warlingham", "Wallington", "Walton On Thames", "Worcester Park", "Weybridge", "Wimbledon", "Wimbledon Park",
+    "West Molesey", "West Wickham", "Wandsworth", "West Norwood"
+  ]
+}

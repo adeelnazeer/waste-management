@@ -1,0 +1,73 @@
+{
+  "name": "Waste Management",
+  "tagline": "One Call – We Do It All",
+  "description": "Your trusted choice for skip and RoRo hire, delivering reliable service, expert support, and great value for money across South West London, South East London and Surrey.",
+  "phone": "0208 685 9393",
+  "phoneDisplay": "0208 685 9393",
+  "email": "info@wastemanagement.co.uk",
+  "address": {
+    "line1": "Unit 2 Abbey Industrial Estate",
+    "line2": "24 Willow Lane",
+    "city": "Mitcham",
+    "county": "Surrey",
+    "postcode": "CR4 4NA",
+    "country": "United Kingdom"
+  },
+  "hours": {
+    "weekdays": "Mon–Fri 7 AM to 5 PM",
+    "saturday": "Sat 7 AM to 1 PM"
+  },
+  "social": {
+    "facebook": "https://facebook.com",
+    "instagram": "https://instagram.com"
+  },
+  "navigation": [
+    { "label": "Home", "href": "/" },
+    {
+      "label": "Book a Service",
+      "href": "/services/skip-hire",
+      "children": [
+        { "label": "Skip Hire Services", "href": "/services/skip-hire" },
+        { "label": "RoRo Hire", "href": "/services/roro-hire" },
+        { "label": "Wait and Load Service", "href": "/services/wait-and-load" },
+        { "label": "3rd Party Tipping", "href": "/services/third-party-tipping" },
+        { "label": "Grab Loader & Muckaway", "href": "/services/grab-loader-muckaway" }
+      ]
+    },
+    { "label": "About Us", "href": "/about" },
+    { "label": "Areas We Cover", "href": "/areas" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "footerLinks": {
+    "company": [
+      { "label": "About Us", "href": "/about" },
+      { "label": "Areas We Cover", "href": "/areas" },
+      { "label": "Contact Us", "href": "/contact" },
+      { "label": "Skip Hire", "href": "/services/skip-hire" }
+    ],
+    "services": [
+      { "label": "Skip Hire", "href": "/services/skip-hire" },
+      { "label": "RoRo Hire", "href": "/services/roro-hire" },
+      { "label": "Wait and Load", "href": "/services/wait-and-load" },
+      { "label": "3rd Party Tipping", "href": "/services/third-party-tipping" },
+      { "label": "Grab Loader & Muckaway", "href": "/services/grab-loader-muckaway" }
+    ],
+    "legal": [
+      { "label": "Terms & Conditions", "href": "/contact" },
+      { "label": "Privacy Policy", "href": "/contact" },
+      { "label": "Environmental Policy", "href": "/about" }
+    ]
+  },
+  "highlights": [
+    "Same-Day Service Available",
+    "Domestic, Industrial and Commercial Waste",
+    "Prompt and Reliable Service",
+    "Permits Arranged Where Necessary",
+    "Simple Booking Process",
+    "All Major Credit and Debit Cards Accepted",
+    "Our Aim Is To Recycle 100% of Waste",
+    "Zero-To-Landfill Policy",
+    "Wait and Load Service Available",
+    "No Job Too Small Or Too Large"
+  ]
+}
