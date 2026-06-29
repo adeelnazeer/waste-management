@@ -1,0 +1,50 @@
+{
+  "hero": {
+    "title": "Help & Advice",
+    "subtitle": "Guides and tips to help you choose the right service and dispose of waste responsibly."
+  },
+  "articles": [
+    {
+      "slug": "choosing-the-right-skip-size",
+      "category": "Skip Hire",
+      "title": "How to Choose the Right Skip Size",
+      "excerpt": "From a 4-yard mini skip to a 16-yard maxi, here's how to pick the perfect size for your project and avoid paying for space you don't need.",
+      "readTime": "4 min read"
+    },
+    {
+      "slug": "do-i-need-a-skip-permit",
+      "category": "Permits",
+      "title": "Do I Need a Skip Permit?",
+      "excerpt": "If your skip is going on a public road, you'll likely need a permit. Learn when permits are required and how we arrange them for you.",
+      "readTime": "3 min read"
+    },
+    {
+      "slug": "what-can-and-cant-go-in-a-skip",
+      "category": "Waste Types",
+      "title": "What Can and Can't Go in a Skip",
+      "excerpt": "A clear guide to allowed and prohibited materials, plus what to do with hazardous items like asbestos, batteries and electricals.",
+      "readTime": "5 min read"
+    },
+    {
+      "slug": "skip-hire-vs-man-and-van",
+      "category": "Guides",
+      "title": "Skip Hire vs Man & Van: Which Is Right for You?",
+      "excerpt": "Both have their place. We compare cost, convenience and access to help you choose the best option for your clearance.",
+      "readTime": "4 min read"
+    },
+    {
+      "slug": "disposing-of-hazardous-waste",
+      "category": "Hazardous Waste",
+      "title": "How to Safely Dispose of Hazardous Waste",
+      "excerpt": "Hazardous waste needs special handling. Here's what counts as hazardous and how our licensed collection keeps you compliant.",
+      "readTime": "6 min read"
+    },
+    {
+      "slug": "reducing-construction-waste",
+      "category": "Sustainability",
+      "title": "5 Ways to Reduce Construction Waste",
+      "excerpt": "Cut costs and your environmental impact with these practical tips for reducing and recycling waste on site.",
+      "readTime": "5 min read"
+    }
+  ]
+}

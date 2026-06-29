@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about booking, pricing, collections and payments."
+  },
+  "categories": [
+    {
+      "name": "Booking & Pricing",
+      "items": [
+        { "q": "How do I book a service?", "a": "Use our online booking journey — select your service, answer a few quick questions, choose a date and pay securely with Stripe. The whole process takes under three minutes." },
+        { "q": "Is the price I see the price I pay?", "a": "Yes. We show transparent, upfront pricing with any applicable charges before you pay. There are no hidden fees." },
+        { "q": "Can I get a custom quote?", "a": "Absolutely. For larger or specialist jobs, contact us and our team will provide a tailored, no-obligation quote." }
+      ]
+    },
+    {
+      "name": "Collections & Delivery",
+      "items": [
+        { "q": "Do you offer same-day collection?", "a": "Same-day and next-day availability is offered in most areas. Enter your postcode on the Areas We Cover page to check." },
+        { "q": "Do I need a permit for a skip?", "a": "If your skip is placed on a public road you'll need a permit. We arrange this for you during booking where required." },
+        { "q": "What can't go in a skip?", "a": "Hazardous materials such as asbestos, chemicals, batteries and electrical items can't go in a standard skip — but we offer dedicated hazardous waste collection for these." }
+      ]
+    },
+    {
+      "name": "Payments",
+      "items": [
+        { "q": "How do I pay?", "a": "Payments are handled securely by Stripe Checkout. We accept credit and debit cards, Apple Pay and Google Pay." },
+        { "q": "Will I receive an invoice?", "a": "Yes. A confirmation email and invoice are sent automatically once your payment is successful." },
+        { "q": "Is my payment secure?", "a": "Completely. We never store your card details — all payments are processed directly and securely through Stripe." }
+      ]
+    },
+    {
+      "name": "Recycling & Compliance",
+      "items": [
+        { "q": "What happens to my waste?", "a": "We divert 98% of collected waste away from landfill. Materials are sorted and recycled at licensed facilities wherever possible." },
+        { "q": "Are you a licensed waste carrier?", "a": "Yes. We are registered with the Environment Agency and provide full waste transfer documentation for every collection." }
+      ]
+    }
+  ]
+}

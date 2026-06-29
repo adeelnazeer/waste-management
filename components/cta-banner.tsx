@@ -1,49 +1,32 @@
 import Link from "next/link";
 import { Phone } from "lucide-react";
-
-type CtaBannerProps = {
-  icon?: string;
-  title: string;
-  description: string;
-  ctaPrimary: { label: string; href: string };
-  ctaSecondary?: { label: string; href: string };
-  variant?: "green" | "dark";
-};
+import { site } from "@/lib/content";
 
 export function CtaBanner({
-  icon,
   title,
   description,
-  ctaPrimary,
-  ctaSecondary,
-  variant = "green",
-}: CtaBannerProps) {
-  const isGreen = variant === "green";
-
+  ctaPrimary = { label: "Book a Service", href: "/book" },
+}: {
+  title: string;
+  description: string;
+  ctaPrimary?: { label: string; href: string };
+}) {
+  const telHref = `tel:${site.phone.replace(/\s/g, "")}`;
   return (
-    <section
-      className={`section-padding ${isGreen ? "bg-brand" : "gradient-hero"} text-white`}
-    >
-      <div className="container-narrow text-center">
-        {icon && <span className="mb-4 block text-4xl">{icon}</span>}
-        <h2 className="!text-white">{title}</h2>
-        <p className="mx-auto mt-4 max-w-2xl text-lg text-white/90">{description}</p>
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-          <Link
-            href={ctaPrimary.href}
-            className={isGreen ? "btn-dark" : "btn-primary"}
-          >
+    <section className="bg-brand">
+      <div className="container-narrow flex flex-col items-center justify-between gap-6 px-4 py-12 text-center md:flex-row md:px-8 md:text-left">
+        <div>
+          <h2 className="!text-white">{title}</h2>
+          <p className="mt-2 max-w-xl text-white/90">{description}</p>
+        </div>
+        <div className="flex shrink-0 flex-wrap justify-center gap-3">
+          <Link href={ctaPrimary.href} className="btn-dark">
             {ctaPrimary.label}
           </Link>
-          {ctaSecondary && (
-            <a
-              href={ctaSecondary.href}
-              className="btn-secondary flex items-center gap-2"
-            >
-              <Phone className="h-4 w-4" />
-              {ctaSecondary.label}
-            </a>
-          )}
+          <a href={telHref} className="btn-secondary !border-white">
+            <Phone className="h-4 w-4" />
+            {site.phoneDisplay}
+          </a>
         </div>
       </div>
     </section>

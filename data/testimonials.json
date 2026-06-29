@@ -1,20 +1,28 @@
 {
   "testimonials": [
     {
-      "name": "Oliver Rolfe Landscapes",
-      "quote": "A very reliable and professional company that we have been using for many years."
+      "name": "James M.",
+      "location": "Leicester",
+      "rating": 5,
+      "quote": "Booked a skip online in under two minutes and it arrived the same day. Brilliant service and the price was exactly as quoted."
     },
     {
-      "name": "Capitol Building Services Limited",
-      "quote": "Every job Waste Management do for us is always prompt and efficient and we would thoroughly recommend them."
+      "name": "Sarah T.",
+      "location": "Birmingham",
+      "rating": 5,
+      "quote": "Used the cage van service for an office clearance. The team did all the loading and were friendly and efficient throughout."
     },
     {
-      "name": "Julie O",
-      "quote": "Waste Management sorted out our skip permit and did a really good job over the 2 weeks with regular changes and the ease of payment on the phone was really good – nice team of people."
+      "name": "Mark D.",
+      "location": "Nottingham",
+      "rating": 5,
+      "quote": "Transparent pricing and no hidden charges. Paying online with Apple Pay made the whole thing effortless."
     },
     {
-      "name": "Jacqueline Palmer",
-      "quote": "Excellent. Always on time, easy to communicate with & great at reminding me when we need to renew permits! Would happily recommend Waste Management."
+      "name": "Emma R.",
+      "location": "Coventry",
+      "rating": 5,
+      "quote": "Fast, reliable and genuinely eco-friendly. It's reassuring to know almost all of our waste was recycled."
     }
   ]
 }

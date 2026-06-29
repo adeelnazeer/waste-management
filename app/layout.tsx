@@ -20,10 +20,12 @@ export const metadata: Metadata = {
   keywords: [
     "skip hire",
     "waste management",
-    "RoRo hire",
+    "cage van hire",
+    "hazardous waste",
+    "demolition services",
+    "portaloo hire",
     "waste removal",
-    "London skip hire",
-    "Surrey skip hire",
+    "book waste collection online",
   ],
 };
 

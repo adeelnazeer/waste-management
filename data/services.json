@@ -3,202 +3,195 @@
     {
       "slug": "skip-hire",
       "title": "Skip Hire",
-      "shortDescription": "Ideal for home renovations, garden clearances, and general waste removal. Our skips provide a simple, cost-effective solution for keeping your project tidy, with fast delivery and collection available.",
-      "image": "/images/skip-hire.jpg",
-      "ctaPrimary": { "label": "Order Now", "href": "/contact" },
-      "ctaSecondary": { "label": "More Info", "href": "/services/skip-hire" },
+      "icon": "container",
+      "fromPrice": 120,
+      "shortDescription": "Ideal for home renovations, garden clearances and general waste removal. Fast delivery and collection with permits arranged where needed.",
+      "image": "/images/hero-truck.png",
       "hero": {
-        "title": "Skip Hire Services",
-        "subtitle": "Fast, reliable skip hire for domestic and commercial projects across London and Surrey."
+        "title": "Skip Hire",
+        "subtitle": "Simple, cost-effective skip hire for domestic and commercial projects across the UK."
       },
       "content": {
-        "intro": "Waste Management always has a large number of skips in various sizes in stock for immediate delivery or exchange. Whether you're clearing a garden, renovating your home, or managing a construction site, we have the right skip for your needs.",
+        "intro": "Choose from a full range of skip sizes for any project — from small garden clear-outs to major construction works. We deliver, exchange and collect on your schedule, and we arrange road permits where required.",
         "features": [
-          "Skips available from 4 yard to 16 yard",
-          "Same-day and next-day delivery",
-          "Flexible hire periods",
-          "Skip permits arranged where necessary",
-          "Professional and courteous drivers",
-          "Competitive, transparent pricing"
+          "Skip sizes from 4 to 16 yards",
+          "On-road and off-road placement",
+          "Permits arranged where required",
+          "Wait & load option available",
+          "Same-day & next-day delivery",
+          "98% of waste recycled"
         ],
-        "sizes": [
-          { "size": "4 Yard", "description": "Ideal for small garden clearances and minor DIY projects. Holds approximately 40 bin bags." },
-          { "size": "6 Yard", "description": "Perfect for medium-sized renovations and household clearances. Holds approximately 60 bin bags." },
-          { "size": "8 Yard", "description": "Our most popular size for larger home projects and small building works. Holds approximately 80 bin bags." },
-          { "size": "12 Yard", "description": "Suitable for substantial clearances and commercial waste. Holds approximately 110–120 bin bags." },
-          { "size": "16 Yard", "description": "Large capacity for major construction and demolition projects." }
+        "options": [
+          { "name": "4 Yard Skip", "description": "Small garden and household clearances. ~40 bin bags.", "price": 120 },
+          { "name": "6 Yard Skip", "description": "Renovations and medium clearances. ~60 bin bags.", "price": 165 },
+          { "name": "8 Yard Skip", "description": "Our most popular size for building works. ~80 bin bags.", "price": 220 },
+          { "name": "12 Yard Skip", "description": "Bulky, lightweight commercial waste. ~110 bin bags.", "price": 320 }
+        ]
+      },
+      "workflow": {
+        "title": "Skip Hire booking questions",
+        "steps": [
+          "Choose your skip size",
+          "On-road or off-road placement",
+          "Permit required?",
+          "Wait & load needed?",
+          "Type of waste",
+          "Site contact information"
         ]
       }
     },
     {
-      "slug": "roro-hire",
-      "title": "RoRo Hire",
-      "shortDescription": "Designed for large commercial and construction projects, our RoRo containers handle high volumes of bulky and heavy waste. Rear-door access makes loading quick and efficient.",
-      "image": "/images/roro-hire.jpg",
-      "ctaPrimary": { "label": "Contact Us", "href": "/contact" },
-      "ctaSecondary": { "label": "More Info", "href": "/services/roro-hire" },
+      "slug": "cage-van-hire",
+      "title": "Cage Van Hire",
+      "icon": "truck",
+      "fromPrice": 90,
+      "shortDescription": "Perfect where skips aren't practical. Flexible man-and-van waste collection for clearances, bulky waste and restricted-access sites.",
+      "image": "/images/hero-truck.png",
       "hero": {
-        "title": "Roll-on Roll-off (RoRo) Hire",
-        "subtitle": "High-capacity containers for large-scale commercial and construction waste management."
+        "title": "Cage Van Hire",
+        "subtitle": "Flexible man-and-van waste collection — we load it, we take it away."
       },
       "content": {
-        "intro": "Our Roll-on Roll-off containers are designed for projects that generate significant volumes of waste. With rear-door access for easy loading and robust construction for heavy materials, RoRo hire is the efficient choice for commercial sites.",
+        "intro": "When a skip isn't practical, our cage van service is the perfect alternative. Our team arrives, loads your waste and removes it the same day — no permit and no waiting around.",
         "features": [
-          "20 yard and 40 yard containers available",
-          "Rear-door access for efficient loading",
-          "Suitable for bulky and heavy waste",
-          "Regular collection and exchange schedules",
-          "Fully licensed waste disposal",
-          "Ideal for construction and demolition"
-        ],
-        "sizes": [
-          { "size": "20 Yard RoRo", "description": "Compact RoRo container ideal for mid-size commercial projects with restricted access." },
-          { "size": "40 Yard RoRo", "description": "Maximum capacity container for large construction sites and industrial waste." }
-        ]
-      }
-    },
-    {
-      "slug": "wait-and-load",
-      "title": "Wait and Load Service",
-      "shortDescription": "Our driver waits while you load the vehicle, then takes your waste away immediately. Perfect when you need waste removed quickly without hiring a skip.",
-      "image": "/images/wait-and-load.jpg",
-      "ctaPrimary": { "label": "Contact Us", "href": "/contact" },
-      "ctaSecondary": { "label": "More Info", "href": "/services/wait-and-load" },
-      "hero": {
-        "title": "Wait and Load Service",
-        "subtitle": "Quick waste removal without the wait – our team loads and goes."
-      },
-      "content": {
-        "intro": "The Wait and Load service is perfect when you need waste removed quickly and don't have space for a skip. Our driver arrives, waits while you or our team loads the vehicle, and takes your waste away immediately.",
-        "features": [
-          "No skip permit required",
-          "Ideal for restricted access locations",
-          "Same-day service available",
-          "Flexible loading time",
-          "Cost-effective for smaller loads",
-          "Professional waste disposal"
-        ],
-        "sizes": []
-      }
-    },
-    {
-      "slug": "third-party-tipping",
-      "title": "3rd Party Tipping",
-      "shortDescription": "Licensed waste transfer station accepting third-party tipping for trade and commercial customers. Competitive rates with full waste documentation.",
-      "image": "/images/tipping.jpg",
-      "ctaPrimary": { "label": "Contact Us", "href": "/contact" },
-      "ctaSecondary": { "label": "More Info", "href": "/services/third-party-tipping" },
-      "hero": {
-        "title": "3rd Party Tipping",
-        "subtitle": "Licensed waste transfer for trade and commercial customers."
-      },
-      "content": {
-        "intro": "Our licensed waste transfer facility accepts third-party tipping from trade customers, builders, and waste carriers. We provide full waste transfer documentation and competitive tipping rates.",
-        "features": [
-          "Licensed Environment Agency facility",
-          "Waste transfer notes provided",
-          "Competitive tipping rates",
-          "Wide range of waste types accepted",
-          "Fast turnaround times",
-          "Over 98% of waste recycled"
-        ],
-        "sizes": []
-      }
-    },
-    {
-      "slug": "grab-loader-muckaway",
-      "title": "Grab Loader & Muckaway",
-      "shortDescription": "Efficient grab lorry services for site clearance, muckaway, and bulk waste removal. Reach over walls and fences for hard-to-access areas.",
-      "image": "/images/grab-loader.jpg",
-      "ctaPrimary": { "label": "Contact Us", "href": "/contact" },
-      "ctaSecondary": { "label": "More Info", "href": "/services/grab-loader-muckaway" },
-      "hero": {
-        "title": "Grab Loader & Muckaway Services",
-        "subtitle": "Professional site clearance and bulk waste removal with grab lorries."
-      },
-      "content": {
-        "intro": "Our grab loader and muckaway services provide an efficient alternative to traditional skip hire. Grab lorries can reach over walls and fences, making them ideal for sites with limited access or where speed is essential.",
-        "features": [
-          "8-wheel and 4-wheel grab lorries",
-          "Reach over walls and obstacles",
-          "Ideal for soil, rubble, and hardcore",
-          "Faster than manual loading",
-          "Site clearance specialists",
-          "Fully licensed operators"
-        ],
-        "sizes": []
-      }
-    },
-    {
-      "slug": "site-clearance",
-      "title": "Site Clearance",
-      "shortDescription": "We provide professional site clearance services for construction, commercial, and industrial projects. Our team removes waste quickly and safely, helping keep your site clear and compliant.",
-      "image": "/images/site-clearance.jpg",
-      "ctaPrimary": { "label": "Contact Us", "href": "/contact" },
-      "ctaSecondary": { "label": "More Info", "href": "/contact" },
-      "hero": {
-        "title": "Site Clearance",
-        "subtitle": "Professional clearance for construction, commercial, and industrial projects."
-      },
-      "content": {
-        "intro": "Our site clearance team handles everything from small garden clearances to large commercial and industrial projects. We work quickly and safely to keep your site clear, compliant, and ready for the next phase of work.",
-        "features": [
-          "Construction site clearance",
-          "Commercial and industrial projects",
-          "Hazardous waste assessment",
-          "Full site documentation",
-          "Flexible scheduling",
-          "Competitive project quotes"
-        ],
-        "sizes": []
-      }
-    },
-    {
-      "slug": "trade-waste",
-      "title": "Trade Waste",
-      "shortDescription": "Reliable trade waste collections for businesses of all sizes. We offer flexible waste management solutions to help keep your premises clean, organised, and environmentally responsible.",
-      "image": "/images/trade-waste.jpg",
-      "ctaPrimary": { "label": "Read More", "href": "/contact" },
-      "ctaSecondary": { "label": "Contact Us", "href": "/contact" },
-      "hero": {
-        "title": "Trade Waste Collections",
-        "subtitle": "Flexible waste management solutions for businesses of all sizes."
-      },
-      "content": {
-        "intro": "Our trade waste collection service is designed for businesses that need regular, reliable waste removal. From small offices to large industrial premises, we tailor our service to your schedule and waste volumes.",
-        "features": [
-          "Regular scheduled collections",
-          "Flexible contract terms",
-          "Various container sizes",
-          "Full waste audit support",
-          "Environmentally responsible disposal",
-          "Competitive business rates"
-        ],
-        "sizes": []
-      }
-    },
-    {
-      "slug": "caged-van-hire",
-      "title": "Caged Van Hire",
-      "shortDescription": "Perfect where skips aren't practical, our caged vans offer a flexible waste removal solution for site clearances, bulky waste collections, and restricted-access locations.",
-      "image": "/images/caged-van.jpg",
-      "ctaPrimary": { "label": "Contact Us", "href": "/contact" },
-      "ctaSecondary": { "label": "More Info", "href": "/contact" },
-      "hero": {
-        "title": "Caged Van Hire",
-        "subtitle": "Flexible waste removal for restricted-access locations."
-      },
-      "content": {
-        "intro": "When a skip isn't practical – due to access restrictions, parking limitations, or the nature of your waste – our caged vans provide the perfect alternative. Ideal for bulky items, site clearances, and locations where skips cannot be placed.",
-        "features": [
-          "7.5 tonne caged vehicles",
-          "Ideal for restricted access",
-          "Bulky waste collections",
           "No permit required",
-          "Same-day availability",
-          "Driver-assisted loading available"
+          "Loading assistance included",
+          "Ideal for restricted access",
+          "Pay only for the space you use",
+          "Same-day collections available",
+          "Fully licensed disposal"
         ],
-        "sizes": []
+        "options": [
+          { "name": "Quarter Load", "description": "A few items or a small clear-out.", "price": 90 },
+          { "name": "Half Load", "description": "Single room or garage clearance.", "price": 160 },
+          { "name": "Three-Quarter Load", "description": "Larger household clearances.", "price": 220 },
+          { "name": "Full Load", "description": "Whole-property or office clearance.", "price": 280 }
+        ]
+      },
+      "workflow": {
+        "title": "Cage Van booking questions",
+        "steps": [
+          "Property type",
+          "Collection type",
+          "Estimated waste volume",
+          "Loading assistance required?",
+          "Upload photos of the waste",
+          "Contact details"
+        ]
+      }
+    },
+    {
+      "slug": "hazardous-waste",
+      "title": "Hazardous Waste",
+      "icon": "alert",
+      "fromPrice": 150,
+      "shortDescription": "Safe, compliant collection and disposal of hazardous waste with full documentation and licensed handling.",
+      "image": "/images/hero-truck.png",
+      "hero": {
+        "title": "Hazardous Waste Collection",
+        "subtitle": "Safe, fully compliant collection and disposal of hazardous materials."
+      },
+      "content": {
+        "intro": "We handle hazardous waste safely and in full compliance with UK regulations. From asbestos to chemicals, batteries and clinical waste, our licensed team manages collection, documentation and disposal end-to-end.",
+        "features": [
+          "Licensed hazardous waste carrier",
+          "Full consignment documentation",
+          "Asbestos, chemicals, batteries & more",
+          "Specialist trained operatives",
+          "Emergency collections available",
+          "Compliant treatment & disposal"
+        ],
+        "options": [
+          { "name": "Small Quantity", "description": "Single container or limited items.", "price": 150 },
+          { "name": "Medium Quantity", "description": "Multiple containers or a part-load.", "price": 280 },
+          { "name": "Large Quantity", "description": "Bulk hazardous waste removal.", "price": 450 }
+        ]
+      },
+      "workflow": {
+        "title": "Hazardous Waste booking questions",
+        "steps": [
+          "Type of hazardous waste",
+          "Quantity",
+          "Collection method",
+          "Documentation required?",
+          "Emergency contact"
+        ]
+      }
+    },
+    {
+      "slug": "demolition-services",
+      "title": "Demolition Services",
+      "icon": "hammer",
+      "fromPrice": 450,
+      "shortDescription": "Professional, safe demolition for residential and commercial sites, including site clearance and waste removal.",
+      "image": "/images/hero-truck.png",
+      "hero": {
+        "title": "Demolition Services",
+        "subtitle": "Professional and safe demolition for residential and commercial projects."
+      },
+      "content": {
+        "intro": "Our experienced demolition teams handle projects of all sizes — from internal strip-outs to full structural demolition. We manage surveys, method statements, safe demolition and complete site clearance.",
+        "features": [
+          "Residential & commercial demolition",
+          "Internal strip-outs & soft strips",
+          "Full structural demolition",
+          "Site surveys & method statements",
+          "Complete waste removal",
+          "Fully insured & accredited"
+        ],
+        "options": [
+          { "name": "Soft Strip / Internal", "description": "Internal demolition and strip-out works.", "price": 450 },
+          { "name": "Partial Demolition", "description": "Outbuildings, extensions and structures.", "price": 950 },
+          { "name": "Full Demolition", "description": "Complete structural demolition projects.", "price": 1800 }
+        ]
+      },
+      "workflow": {
+        "title": "Demolition booking questions",
+        "steps": [
+          "Property type",
+          "Type of demolition",
+          "Site size",
+          "Survey required?",
+          "Upload site photos"
+        ]
+      }
+    },
+    {
+      "slug": "portaloo-hire",
+      "title": "Portaloo Hire",
+      "icon": "home",
+      "fromPrice": 75,
+      "shortDescription": "Clean, well-maintained portable toilets for construction sites, events and outdoor projects with flexible hire periods.",
+      "image": "/images/hero-truck.png",
+      "hero": {
+        "title": "Portaloo Hire",
+        "subtitle": "Clean, reliable portable toilet hire for sites and events."
+      },
+      "content": {
+        "intro": "Keep your site or event covered with our clean, well-serviced portable toilets. We offer single units and large multi-unit blocks with regular servicing included on longer hires.",
+        "features": [
+          "Standard & luxury units",
+          "Single or multi-unit blocks",
+          "Regular servicing included",
+          "Construction & event hire",
+          "Flexible hire periods",
+          "Fast delivery & setup"
+        ],
+        "options": [
+          { "name": "Standard Unit", "description": "Single portable toilet, weekly hire.", "price": 75 },
+          { "name": "Serviced Unit", "description": "Unit with weekly servicing included.", "price": 110 },
+          { "name": "Luxury / Disabled Unit", "description": "Premium or accessible unit.", "price": 160 }
+        ]
+      },
+      "workflow": {
+        "title": "Portaloo booking questions",
+        "steps": [
+          "Hire type",
+          "Number of units",
+          "Hire duration",
+          "Delivery location",
+          "Contact information"
+        ]
       }
     }
   ]

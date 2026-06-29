@@ -1,18 +1,26 @@
 {
   "hero": {
     "title": "Areas We Cover",
-    "subtitle": "We provide skip hire and waste management services across South West London, South East London, and Surrey."
+    "subtitle": "We provide fast, reliable waste management across the UK. Check availability in your area below."
   },
-  "description": "Waste Management delivers prompt, reliable skip hire and waste clearance services to homes and businesses throughout the following areas. Don't see your area listed? Contact us – we may still be able to help.",
-  "areas": [
-    "Addlestone", "Ashtead", "Banstead", "Barnes", "Balham", "Battersea", "Beckenham", "Brixton", "Brentford", "Croydon",
-    "Caterham", "Coulsdon", "Carshalton", "Cheam", "Cobham", "Clapham", "Chessington", "Chelsea", "Crystal Palace",
-    "Dulwich", "Ewell", "Epsom", "East Sheen", "East Molesey", "Esher", "Feltham", "Fulham", "Hampton", "Herne Hill",
-    "Hounslow", "Isleworth", "Kingston", "Kenley", "Kingston Upon Thames", "Lewisham", "Leatherhead", "Morden", "Mitcham",
-    "New Malden", "North Cheam", "Norwood", "Penge", "Putney", "Peckham", "Purley", "Richmond", "Raynes Park", "South Croydon",
-    "Sutton", "Streatham", "Southfields", "Staines On Thames", "Sunbury", "South Cheam", "Stoneleigh", "Surbiton",
-    "Shepperton", "Sydenham", "South Norwood", "Selhurst", "Tolworth", "Tadworth", "Teddington", "Tooting", "Tulse Hill",
-    "Warlingham", "Wallington", "Walton On Thames", "Worcester Park", "Weybridge", "Wimbledon", "Wimbledon Park",
-    "West Molesey", "West Wickham", "Wandsworth", "West Norwood"
+  "description": "Enter your postcode to check coverage and same-day or next-day availability. Don't see your area? Get in touch — we're expanding all the time.",
+  "popular": [
+    { "name": "Leicester", "availability": "same-day" },
+    { "name": "Birmingham", "availability": "same-day" },
+    { "name": "London", "availability": "next-day" },
+    { "name": "Manchester", "availability": "next-day" },
+    { "name": "Nottingham", "availability": "same-day" },
+    { "name": "Coventry", "availability": "same-day" },
+    { "name": "Derby", "availability": "next-day" },
+    { "name": "Sheffield", "availability": "next-day" },
+    { "name": "Northampton", "availability": "same-day" },
+    { "name": "Loughborough", "availability": "same-day" }
+  ],
+  "regions": [
+    { "name": "East Midlands", "cities": ["Leicester", "Nottingham", "Derby", "Northampton", "Loughborough"] },
+    { "name": "West Midlands", "cities": ["Birmingham", "Coventry", "Wolverhampton", "Solihull", "Walsall"] },
+    { "name": "London & South East", "cities": ["London", "Reading", "Luton", "Milton Keynes", "Watford"] },
+    { "name": "North West", "cities": ["Manchester", "Liverpool", "Stockport", "Bolton", "Warrington"] },
+    { "name": "Yorkshire", "cities": ["Sheffield", "Leeds", "Bradford", "Doncaster", "Rotherham"] }
   ]
 }

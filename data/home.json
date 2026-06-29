@@ -1,58 +1,64 @@
 {
   "hero": {
-    "label": "What We Do",
-    "title": "Order a skip today",
-    "subtitle": "Your trusted choice for skip and RoRo hire, delivering reliable service, expert support, and great value for money.",
-    "ctaPrimary": { "label": "Book Now", "href": "/contact" },
-    "ctaSecondary": { "label": "0208 685 9393", "href": "tel:02086859393" },
-    "badges": ["Same Day Delivery", "Competitive Prices"]
-  },
-  "intro": {
-    "label": "Waste Management Services & Skip Hire Company",
-    "title": "Waste Management Services & Skip Hire Company",
-    "paragraphs": [
-      "Waste Management provides a complete waste management service, including skip hire, Roll-on Roll-off containers, caged vans and caged lorries.",
-      "Fully licensed by the Environment Agency (EA), we provide a prompt, reliable and competitively priced service across South West London, South East London and Surrey."
-    ],
-    "tagline": "One waste, one call, we do it all…"
+    "badge": "Licensed & Insured Waste Carrier",
+    "titleStart": "Waste Removal",
+    "titleHighlight": "Made Simple",
+    "subtitle": "Book skip hire, collections, demolition and portaloo hire online in minutes. Fast, reliable and environmentally responsible waste management.",
+    "ctaPrimary": { "label": "Book a Service", "href": "/book" },
+    "ctaSecondary": { "label": "Get a Quote", "href": "/contact" },
+    "image": "/images/hero-truck.png",
+    "trustBadges": [
+      { "icon": "shield", "title": "Licensed & Insured", "text": "Fully licensed waste carrier" },
+      { "icon": "zap", "title": "Fast Service", "text": "Same-day & next-day collections" },
+      { "icon": "leaf", "title": "Eco Friendly", "text": "98% waste recycled" },
+      { "icon": "lock", "title": "Secure Payments", "text": "Powered by Stripe" }
+    ]
   },
   "servicesSection": {
     "label": "Our Services",
-    "title": "Waste Management Skip Hire Services",
-    "description": "We always have a large number of skips in various sizes in stock for immediate delivery or exchange."
-  },
-  "quoteCta": {
-    "icon": "♻",
-    "title": "Need Waste Removed Fast?",
-    "description": "Get a free, no-obligation quote for waste clearance, trade waste collections, skip hire and site clearances. Same-day and next-day services available.",
-    "ctaPrimary": { "label": "Get Quote", "href": "/contact" },
-    "ctaSecondary": { "label": "0208 685 9393", "href": "tel:02086859393" }
-  },
-  "testimonialsSection": {
-    "label": "Satisfied Clients",
-    "title": "What Our Customers Say"
+    "title": "Choose the right service for you",
+    "description": "Transparent pricing and instant online booking for every type of waste."
   },
   "whyChoose": {
     "label": "Why Choose Us",
-    "title": "Why Choose Waste Management as your skip hire company?",
-    "points": [
-      "If you want your waste legally collected and disposed of with over 98% of all waste recycled, then choose Waste Management.",
-      "If you want same-day delivery skip hire at competitive prices, look no further. Our skips are delivered, exchanged and collected by professional and courteous drivers.",
-      "If you need advice and support from a reliable company you will gladly recommend to others, choose Waste Management."
+    "title": "Your trusted waste management partner",
+    "description": "We make responsible waste removal effortless — for homes and businesses alike.",
+    "items": [
+      { "icon": "shield", "title": "Licensed Waste Carrier", "text": "Fully registered with the Environment Agency for safe, legal disposal." },
+      { "icon": "zap", "title": "Fast & Reliable", "text": "Same-day and next-day collections to suit your schedule." },
+      { "icon": "tag", "title": "Transparent Pricing", "text": "Clear, upfront prices with no hidden fees — ever." },
+      { "icon": "leaf", "title": "Eco Friendly", "text": "We divert 98% of collected waste away from landfill." },
+      { "icon": "lock", "title": "Secure Payments", "text": "Pay safely online with Stripe — cards, Apple Pay & Google Pay." }
+    ]
+  },
+  "about": {
+    "label": "About Us",
+    "title": "Committed to a cleaner, greener tomorrow",
+    "paragraphs": [
+      "Waste Management Services is a fully licensed waste carrier helping thousands of residential and commercial customers dispose of waste responsibly.",
+      "From a single skip to full demolition and site clearance, we combine modern online booking with a reliable, environmentally responsible service you can trust."
     ],
-    "cta": { "label": "Contact Us", "href": "/contact" }
+    "cta": { "label": "Learn more about us", "href": "/about" },
+    "stats": [
+      { "value": "10,000+", "label": "Customers Served" },
+      { "value": "200+", "label": "Areas Covered" },
+      { "value": "98%", "label": "Waste Recycled" },
+      { "value": "15+", "label": "Years Experience" }
+    ],
+    "badge": { "value": "98%", "label": "of waste recycled" }
   },
-  "localCompany": {
-    "title": "Waste Management – A Local & Reliable Skip Hire Company",
-    "cta": { "label": "Contact Us", "href": "/contact" }
+  "areas": {
+    "label": "Areas We Cover",
+    "title": "We work across the UK",
+    "description": "Enter your postcode to check availability and same-day or next-day collection in your area."
   },
-  "contactBanner": {
-    "title": "Please Feel Free to Get in Touch",
-    "description": "For more information about any of our products contact our team today! Call: 020 8685 9393 or Email: info@wastemanagement.co.uk, alternatively send a Message via our enquiry form.",
-    "cta": { "label": "Enquiry Form", "href": "/contact" }
+  "reviewsSection": {
+    "label": "Customer Reviews",
+    "title": "What our customers say"
   },
-  "blogSection": {
-    "label": "Our Blog",
-    "title": "Latest News & Advice"
+  "finalCta": {
+    "title": "Need waste removed today?",
+    "description": "Book online in minutes or call our friendly team for a free, no-obligation quote.",
+    "ctaPrimary": { "label": "Book Service Now", "href": "/book" }
   }
 }

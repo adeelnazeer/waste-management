@@ -1,36 +1,32 @@
 {
   "hero": {
-    "title": "About Waste Management",
-    "subtitle": "A local, reliable skip hire and waste management company serving London and Surrey."
+    "title": "About Waste Management Services",
+    "subtitle": "A modern, fully licensed waste carrier on a mission to make responsible waste removal simple for everyone."
   },
+  "stats": [
+    { "value": "10,000+", "label": "Customers Served" },
+    { "value": "200+", "label": "Areas Covered" },
+    { "value": "98%", "label": "Waste Recycled" },
+    { "value": "15+", "label": "Years Experience" }
+  ],
   "sections": [
     {
       "title": "Who We Are",
-      "content": "Waste Management is a fully licensed waste management company providing skip hire, RoRo containers, caged vans, and comprehensive waste clearance services across South West London, South East London, and Surrey. We are registered with the Environment Agency and committed to responsible waste disposal."
+      "content": "Waste Management Services is a fully licensed waste management company serving residential and commercial customers across the UK. We provide skip hire, cage van collections, hazardous waste removal, demolition and portaloo hire — all bookable online in minutes."
     },
     {
       "title": "Our Mission",
-      "content": "Our aim is to recycle 100% of the waste we collect. With a zero-to-landfill policy and over 98% of waste currently recycled, we are dedicated to protecting the environment while providing exceptional service to our customers."
+      "content": "We're committed to a cleaner, greener tomorrow. With a zero-to-landfill ambition and 98% of collected waste recycled, we help our customers dispose of waste responsibly while keeping the process simple and affordable."
     },
     {
       "title": "Why Customers Trust Us",
-      "content": "For years, homeowners, builders, landscapers, and businesses across London and Surrey have relied on Waste Management for prompt, professional, and competitively priced waste solutions. Our courteous drivers, simple booking process, and expert advice set us apart from the competition."
+      "content": "Thousands of homeowners, builders and businesses rely on us for transparent pricing, fast and reliable service, and fully compliant disposal. Our modern booking platform and friendly support team make every job effortless."
     }
   ],
-  "stats": [
-    { "value": "98%+", "label": "Waste Recycled" },
-    { "value": "Same Day", "label": "Delivery Available" },
-    { "value": "10+", "label": "Skip Sizes in Stock" },
-    { "value": "100+", "label": "Areas Covered" }
-  ],
-  "policies": [
-    {
-      "title": "Environmental Policy",
-      "content": "We are committed to minimising the environmental impact of waste disposal. All waste is sorted and processed at licensed facilities, with materials recycled wherever possible. We maintain a zero-to-landfill policy and continuously improve our recycling rates."
-    },
-    {
-      "title": "Licensing & Compliance",
-      "content": "Waste Management holds a valid Waste Carriers Licence issued by the Environment Agency. We comply with all UK waste regulations and provide full waste transfer documentation for every collection."
-    }
+  "values": [
+    { "icon": "leaf", "title": "Sustainability", "text": "We divert 98% of waste from landfill and continually improve our recycling rates." },
+    { "icon": "shield", "title": "Compliance", "text": "Fully licensed and insured, with complete waste transfer documentation." },
+    { "icon": "heart", "title": "Customer First", "text": "Clear pricing, simple booking and responsive support on every job." },
+    { "icon": "zap", "title": "Reliability", "text": "Same-day and next-day availability you can depend on." }
   ]
 }

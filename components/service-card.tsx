@@ -1,55 +1,36 @@
-import type { ElementType } from "react";
 import Link from "next/link";
-import {
-  Truck,
-  Container,
-  Clock,
-  Building2,
-  Shovel,
-  HardHat,
-  Package,
-  Van,
-} from "lucide-react";
-import type { Service } from "@/lib/content";
+import { ArrowRight } from "lucide-react";
+import { Icon } from "@/components/icon";
+import { formatPrice, type Service } from "@/lib/content";
 
-const iconMap: Record<string, ElementType> = {
-  "skip-hire": Truck,
-  "roro-hire": Container,
-  "wait-and-load": Clock,
-  "third-party-tipping": Building2,
-  "grab-loader-muckaway": Shovel,
-  "site-clearance": HardHat,
-  "trade-waste": Package,
-  "caged-van-hire": Van,
-};
-
-type ServiceCardProps = {
-  service: Service;
-};
-
-export function ServiceCard({ service }: ServiceCardProps) {
-  const Icon = iconMap[service.slug] ?? Truck;
-  const href = service.ctaSecondary.href;
-
+export function ServiceCard({ service }: { service: Service }) {
   return (
-    <article className="card-hover flex flex-col overflow-hidden rounded-lg border border-black/10 bg-white shadow-sm">
-      <div className="flex h-44 items-center justify-center bg-gradient-to-br from-brand-soft to-white">
-        <Icon className="h-16 w-16 text-brand" strokeWidth={1.5} />
+    <article className="card card-hover flex flex-col overflow-hidden">
+      <div className="relative flex h-40 items-center justify-center bg-gradient-to-br from-brand-soft to-white">
+        <Icon name={service.icon} className="h-14 w-14 text-brand" strokeWidth={1.5} />
+        <span className="absolute right-3 top-3 rounded-full bg-black px-3 py-1 text-xs font-semibold text-white">
+          From {formatPrice(service.fromPrice)}
+        </span>
       </div>
-      <div className="flex flex-1 flex-col p-6">
-        <h3 className="mb-2 text-xl">{service.title}</h3>
-        <p className="mb-6 flex-1 text-sm leading-relaxed text-text-muted">
+      <div className="flex flex-1 flex-col p-5">
+        <h3 className="text-lg">{service.title}</h3>
+        <p className="mt-2 flex-1 text-sm leading-relaxed text-text-muted">
           {service.shortDescription}
         </p>
-        <div className="flex flex-wrap gap-2">
-          <Link href={service.ctaPrimary.href} className="btn-primary !px-5 !py-2.5 !text-xs">
-            {service.ctaPrimary.label}
+        <div className="mt-5 flex items-center gap-2">
+          <Link
+            href={`/book?service=${service.slug}`}
+            className="btn-primary flex-1 !py-2.5 !text-sm"
+          >
+            Book Now
           </Link>
-          {href.startsWith("/services/") && (
-            <Link href={href} className="btn-outline !px-5 !py-2.5 !text-xs">
-              {service.ctaSecondary.label}
-            </Link>
-          )}
+          <Link
+            href={`/services/${service.slug}`}
+            className="btn-ghost !px-3 !py-2.5"
+            aria-label={`More about ${service.title}`}
+          >
+            <ArrowRight className="h-4 w-4" />
+          </Link>
         </div>
       </div>
     </article>

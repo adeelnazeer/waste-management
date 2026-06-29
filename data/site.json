@@ -1,73 +1,173 @@
 {
-  "name": "Waste Management",
-  "tagline": "One Call – We Do It All",
-  "description": "Your trusted choice for skip and RoRo hire, delivering reliable service, expert support, and great value for money across South West London, South East London and Surrey.",
-  "phone": "0208 685 9393",
-  "phoneDisplay": "0208 685 9393",
-  "email": "info@wastemanagement.co.uk",
+  "name": "Waste Management Services",
+  "shortName": "Waste Management",
+  "tagline": "Waste Removal Made Simple",
+  "description": "A modern, fully licensed waste management company helping residential and commercial customers book skip hire, collections, demolition and more — online in minutes.",
+  "logo": "/new-log.png",
+  "phone": "0800 123 4567",
+  "phoneDisplay": "0800 123 4567",
+  "email": "hello@wastemanagementservices.co.uk",
+  "company": {
+    "registrationNumber": "12345678",
+    "wasteCarrierLicence": "CBDU123456",
+    "vat": "GB 123 4567 89"
+  },
   "address": {
-    "line1": "Unit 2 Abbey Industrial Estate",
-    "line2": "24 Willow Lane",
-    "city": "Mitcham",
-    "county": "Surrey",
-    "postcode": "CR4 4NA",
+    "line1": "Unit 4 Greenway Business Park",
+    "line2": "Frog Island",
+    "city": "Leicester",
+    "county": "Leicestershire",
+    "postcode": "LE3 5AG",
     "country": "United Kingdom"
   },
   "hours": {
-    "weekdays": "Mon–Fri 7 AM to 5 PM",
-    "saturday": "Sat 7 AM to 1 PM"
+    "weekdays": "Mon–Fri: 7am – 6pm",
+    "saturday": "Sat: 8am – 2pm",
+    "sunday": "Sun: Closed"
   },
   "social": {
     "facebook": "https://facebook.com",
-    "instagram": "https://instagram.com"
+    "instagram": "https://instagram.com",
+    "twitter": "https://twitter.com",
+    "linkedin": "https://linkedin.com"
   },
-  "navigation": [
-    { "label": "Home", "href": "/" },
+  "topBar": [
     {
-      "label": "Book a Service",
-      "href": "/services/skip-hire",
+      "icon": "shield",
+      "text": "Licensed Waste Carrier"
+    },
+    {
+      "icon": "recycle",
+      "text": "98% Recycling Rate"
+    },
+    {
+      "icon": "users",
+      "text": "Thousands of Happy Customers"
+    }
+  ],
+  "navigation": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "About Us",
+      "href": "/about"
+    },
+    {
+      "label": "Services",
+      "href": "/services",
       "children": [
-        { "label": "Skip Hire Services", "href": "/services/skip-hire" },
-        { "label": "RoRo Hire", "href": "/services/roro-hire" },
-        { "label": "Wait and Load Service", "href": "/services/wait-and-load" },
-        { "label": "3rd Party Tipping", "href": "/services/third-party-tipping" },
-        { "label": "Grab Loader & Muckaway", "href": "/services/grab-loader-muckaway" }
+        {
+          "label": "Skip Hire",
+          "name": "container",
+          "href": "/services/skip-hire"
+        },
+        {
+          "label": "Cage Van Hire",
+          "name": "truck",
+          "href": "/services/cage-van-hire"
+        },
+        {
+          "label": "Hazardous Waste",
+          "name": "alert",
+          "href": "/services/hazardous-waste"
+        },
+        {
+          "label": "Demolition Services",
+          "name": "hammer",
+          "href": "/services/demolition-services"
+        },
+        {
+          "label": "Portaloo Hire",
+          "name": "home",
+          "href": "/services/portaloo-hire"
+        }
       ]
     },
-    { "label": "About Us", "href": "/about" },
-    { "label": "Areas We Cover", "href": "/areas" },
-    { "label": "Contact", "href": "/contact" }
+    {
+      "label": "Help & Advice",
+      "href": "/help-advice"
+    },
+    {
+      "label": "Areas We Cover",
+      "href": "/areas"
+    },
+    {
+      "label": "Contact Us",
+      "href": "/contact"
+    }
   ],
   "footerLinks": {
-    "company": [
-      { "label": "About Us", "href": "/about" },
-      { "label": "Areas We Cover", "href": "/areas" },
-      { "label": "Contact Us", "href": "/contact" },
-      { "label": "Skip Hire", "href": "/services/skip-hire" }
-    ],
     "services": [
-      { "label": "Skip Hire", "href": "/services/skip-hire" },
-      { "label": "RoRo Hire", "href": "/services/roro-hire" },
-      { "label": "Wait and Load", "href": "/services/wait-and-load" },
-      { "label": "3rd Party Tipping", "href": "/services/third-party-tipping" },
-      { "label": "Grab Loader & Muckaway", "href": "/services/grab-loader-muckaway" }
+      {
+        "label": "Skip Hire",
+        "href": "/services/skip-hire"
+      },
+      {
+        "label": "Cage Van Hire",
+        "href": "/services/cage-van-hire"
+      },
+      {
+        "label": "Hazardous Waste",
+        "href": "/services/hazardous-waste"
+      },
+      {
+        "label": "Demolition Services",
+        "href": "/services/demolition-services"
+      },
+      {
+        "label": "Portaloo Hire",
+        "href": "/services/portaloo-hire"
+      }
     ],
-    "legal": [
-      { "label": "Terms & Conditions", "href": "/contact" },
-      { "label": "Privacy Policy", "href": "/contact" },
-      { "label": "Environmental Policy", "href": "/about" }
+    "company": [
+      {
+        "label": "About Us",
+        "href": "/about"
+      },
+      {
+        "label": "Areas We Cover",
+        "href": "/areas"
+      },
+      {
+        "label": "Help & Advice",
+        "href": "/help-advice"
+      },
+      {
+        "label": "Contact Us",
+        "href": "/contact"
+      }
+    ],
+    "support": [
+      {
+        "label": "Book a Service",
+        "href": "/book"
+      },
+      {
+        "label": "FAQs",
+        "href": "/faqs"
+      },
+      {
+        "label": "Terms & Conditions",
+        "href": "/terms"
+      },
+      {
+        "label": "Privacy Policy",
+        "href": "/privacy"
+      },
+      {
+        "label": "Cookie Policy",
+        "href": "/cookies"
+      }
     ]
   },
   "highlights": [
-    "Same-Day Service Available",
-    "Domestic, Industrial and Commercial Waste",
-    "Prompt and Reliable Service",
-    "Permits Arranged Where Necessary",
-    "Simple Booking Process",
-    "All Major Credit and Debit Cards Accepted",
-    "Our Aim Is To Recycle 100% of Waste",
-    "Zero-To-Landfill Policy",
-    "Wait and Load Service Available",
-    "No Job Too Small Or Too Large"
+    "Licensed Waste Carrier",
+    "Same-day & next-day availability",
+    "Transparent, upfront pricing",
+    "98% of waste recycled",
+    "Secure online payments",
+    "Fully insured & compliant"
   ]
 }

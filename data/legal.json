@@ -1,0 +1,40 @@
+{
+  "terms": {
+    "title": "Terms & Conditions",
+    "updated": "Last updated: June 2026",
+    "sections": [
+      { "heading": "1. Introduction", "body": "These terms and conditions govern your use of the Waste Management Services website and the services we provide. By booking a service you agree to these terms in full." },
+      { "heading": "2. Services", "body": "We provide skip hire, cage van collections, hazardous waste removal, demolition and portaloo hire. Service availability, pricing and timescales may vary by location and are confirmed at the time of booking." },
+      { "heading": "3. Bookings & Pricing", "body": "All prices are shown before payment and include any applicable charges identified during booking. Prices are subject to change for amendments made after booking, such as additional waste, permits or wasted journeys." },
+      { "heading": "4. Payments", "body": "Payments are processed securely by Stripe. Full payment is required at the time of booking unless otherwise agreed in writing. We do not store your card details." },
+      { "heading": "5. Cancellations & Refunds", "body": "You may cancel or amend your booking subject to our cancellation policy. Refunds, where applicable, are processed to your original payment method." },
+      { "heading": "6. Prohibited Waste", "body": "Certain materials, including hazardous waste, must not be placed in standard skips or vans. You are responsible for declaring waste types accurately. Additional charges may apply for prohibited or mis-declared waste." },
+      { "heading": "7. Liability", "body": "Our liability is limited to the value of the service provided. We are not liable for indirect or consequential losses, except where required by law." },
+      { "heading": "8. Governing Law", "body": "These terms are governed by the laws of England and Wales." }
+    ]
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "updated": "Last updated: June 2026",
+    "sections": [
+      { "heading": "1. Overview", "body": "This privacy policy explains how Waste Management Services collects, uses and protects your personal data in line with UK GDPR." },
+      { "heading": "2. Data We Collect", "body": "We collect information you provide when booking or contacting us, including your name, address, contact details and booking information, as well as analytics data about how you use our website." },
+      { "heading": "3. How We Use Your Data", "body": "We use your data to deliver and manage your bookings, process payments, provide customer support, and improve our services. Payment details are handled directly by Stripe." },
+      { "heading": "4. Data Sharing", "body": "We share data only with trusted providers necessary to deliver our service, such as Stripe for payments and our booking platform. We never sell your personal data." },
+      { "heading": "5. Your Rights", "body": "You have the right to access, correct or delete your personal data, and to object to or restrict its processing. Contact us to exercise these rights." },
+      { "heading": "6. Data Security", "body": "We use appropriate technical and organisational measures to protect your data, including encryption and secure infrastructure." },
+      { "heading": "7. Contact", "body": "For any privacy questions, please contact us using the details on our Contact page." }
+    ]
+  },
+  "cookies": {
+    "title": "Cookie Policy",
+    "updated": "Last updated: June 2026",
+    "sections": [
+      { "heading": "1. What Are Cookies", "body": "Cookies are small text files stored on your device that help websites function and understand how visitors use them." },
+      { "heading": "2. How We Use Cookies", "body": "We use essential cookies to operate the site and the booking journey, and analytics cookies (such as Google Analytics) to understand and improve performance." },
+      { "heading": "3. Types of Cookies", "body": "Essential cookies are required for the site to work. Analytics and performance cookies are optional and used only with your consent." },
+      { "heading": "4. Managing Cookies", "body": "You can manage or disable cookies through your browser settings. Disabling essential cookies may affect site functionality." },
+      { "heading": "5. Contact", "body": "If you have questions about our use of cookies, please contact us." }
+    ]
+  }
+}

@@ -1,22 +1,24 @@
 import Link from "next/link";
 
-type PageHeroProps = {
+type Crumb = { label: string; href?: string };
+
+export function PageHero({
+  title,
+  subtitle,
+  label,
+  breadcrumbs,
+}: {
   title: string;
   subtitle?: string;
   label?: string;
-  breadcrumbs?: { label: string; href?: string }[];
-};
-
-export function PageHero({ title, subtitle, label, breadcrumbs }: PageHeroProps) {
+  breadcrumbs?: Crumb[];
+}) {
   return (
     <section className="gradient-hero relative overflow-hidden text-white">
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute -right-20 -top-20 h-80 w-80 rounded-full bg-brand" />
-        <div className="absolute -bottom-10 -left-10 h-60 w-60 rounded-full bg-brand" />
-      </div>
-      <div className="container-narrow relative section-padding !pb-12 !pt-16 md:!pt-20">
+      <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-brand/15 blur-3xl" />
+      <div className="container-narrow relative px-4 py-14 md:px-8 md:py-20">
         {breadcrumbs && (
-          <nav className="mb-4 flex flex-wrap items-center gap-1 text-sm text-white/60">
+          <nav className="mb-4 flex flex-wrap items-center gap-1 text-sm text-white/50">
             {breadcrumbs.map((crumb, i) => (
               <span key={i} className="flex items-center gap-1">
                 {i > 0 && <span>/</span>}
@@ -33,9 +35,7 @@ export function PageHero({ title, subtitle, label, breadcrumbs }: PageHeroProps)
         )}
         {label && <span className="section-label !text-brand-light">{label}</span>}
         <h1 className="!text-white">{title}</h1>
-        {subtitle && (
-          <p className="mt-4 max-w-2xl text-lg text-white/70">{subtitle}</p>
-        )}
+        {subtitle && <p className="mt-4 max-w-2xl text-lg text-white/70">{subtitle}</p>}
       </div>
     </section>
   );

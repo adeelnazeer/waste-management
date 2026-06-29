@@ -5,7 +5,9 @@ import aboutData from "@/data/about.json";
 import contactData from "@/data/contact.json";
 import areasData from "@/data/areas.json";
 import testimonialsData from "@/data/testimonials.json";
-import blogData from "@/data/blog.json";
+import faqsData from "@/data/faqs.json";
+import helpData from "@/data/help.json";
+import legalData from "@/data/legal.json";
 
 export const site = siteData;
 export const home = homeData;
@@ -14,7 +16,9 @@ export const about = aboutData;
 export const contact = contactData;
 export const areas = areasData;
 export const testimonials = testimonialsData.testimonials;
-export const blog = blogData.posts;
+export const faqs = faqsData;
+export const help = helpData;
+export const legal = legalData;
 
 export type Service = (typeof servicesData.services)[number];
 
@@ -23,25 +27,13 @@ export function getServiceBySlug(slug: string): Service | undefined {
 }
 
 export function getServiceSlugs(): string[] {
-  return services
-    .filter((s) =>
-      [
-        "skip-hire",
-        "roro-hire",
-        "wait-and-load",
-        "third-party-tipping",
-        "grab-loader-muckaway",
-      ].includes(s.slug)
-    )
-    .map((s) => s.slug);
+  return services.map((s) => s.slug);
 }
 
-export const featuredServices = services.filter((s) =>
-  [
-    "skip-hire",
-    "roro-hire",
-    "site-clearance",
-    "trade-waste",
-    "caged-van-hire",
-  ].includes(s.slug)
-);
+export function formatPrice(value: number): string {
+  return new Intl.NumberFormat("en-GB", {
+    style: "currency",
+    currency: "GBP",
+    minimumFractionDigits: 2,
+  }).format(value);
+}
