@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Clock } from "lucide-react";
 import { PageHero } from "@/components/page-hero";
 import { CtaBanner } from "@/components/cta-banner";
+import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/scroll-fade";
 import { help } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -19,31 +20,33 @@ export default function HelpAdvicePage() {
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Help & Advice" }]}
       />
 
-      <section className="section-padding bg-surface-muted">
-        <div className="container-narrow grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <AnimatedSection className="section-padding bg-surface-muted">
+        <StaggerContainer className="container-narrow grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {help.articles.map((a) => (
-            <article key={a.slug} className="card card-hover flex flex-col p-6">
-              <span className="text-xs font-bold uppercase tracking-wider text-brand">
-                {a.category}
-              </span>
-              <h3 className="mt-2 text-lg leading-snug">{a.title}</h3>
-              <p className="mt-2 flex-1 text-sm text-text-muted">{a.excerpt}</p>
-              <div className="mt-4 flex items-center justify-between">
-                <span className="flex items-center gap-1.5 text-xs text-text-muted">
-                  <Clock className="h-3.5 w-3.5" />
-                  {a.readTime}
+            <StaggerItem key={a.slug}>
+              <article className="card card-hover flex h-full flex-col p-6">
+                <span className="text-xs font-bold uppercase tracking-wider text-brand">
+                  {a.category}
                 </span>
-                <Link
-                  href="/contact"
-                  className="flex items-center gap-1 text-sm font-semibold text-brand hover:underline"
-                >
-                  Read more <ArrowRight className="h-4 w-4" />
-                </Link>
-              </div>
-            </article>
+                <h3 className="mt-2 text-lg leading-snug">{a.title}</h3>
+                <p className="mt-2 flex-1 text-sm text-text-muted">{a.excerpt}</p>
+                <div className="mt-4 flex items-center justify-between">
+                  <span className="flex items-center gap-1.5 text-xs text-text-muted">
+                    <Clock className="h-3.5 w-3.5" />
+                    {a.readTime}
+                  </span>
+                  <Link
+                    href="/contact"
+                    className="flex items-center gap-1 text-sm font-semibold text-brand hover:underline"
+                  >
+                    Read more <ArrowRight className="h-4 w-4" />
+                  </Link>
+                </div>
+              </article>
+            </StaggerItem>
           ))}
-        </div>
-      </section>
+        </StaggerContainer>
+      </AnimatedSection>
 
       <CtaBanner
         title="Still have questions?"

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/page-hero";
 import { CtaBanner } from "@/components/cta-banner";
 import { FaqAccordion } from "@/components/faq-accordion";
+import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/scroll-fade";
 import { faqs } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -18,16 +19,16 @@ export default function FaqsPage() {
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "FAQs" }]}
       />
 
-      <section className="section-padding bg-surface-muted">
-        <div className="container-narrow max-w-3xl space-y-12">
+      <AnimatedSection className="section-padding bg-surface-muted">
+        <StaggerContainer className="container-narrow max-w-3xl space-y-12">
           {faqs.categories.map((cat) => (
-            <div key={cat.name}>
+            <StaggerItem key={cat.name}>
               <h2 className="mb-5">{cat.name}</h2>
               <FaqAccordion items={cat.items} />
-            </div>
+            </StaggerItem>
           ))}
-        </div>
-      </section>
+        </StaggerContainer>
+      </AnimatedSection>
 
       <CtaBanner
         title="Can't find your answer?"

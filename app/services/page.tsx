@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/page-hero";
 import { ServiceCard } from "@/components/service-card";
 import { CtaBanner } from "@/components/cta-banner";
+import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/scroll-fade";
 import { services } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -20,13 +21,15 @@ export default function ServicesPage() {
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Services" }]}
       />
 
-      <section className="section-padding bg-surface-muted">
-        <div className="container-narrow grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <AnimatedSection className="section-padding bg-surface-muted">
+        <StaggerContainer className="container-narrow grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
-            <ServiceCard key={service.slug} service={service} />
+            <StaggerItem key={service.slug}>
+              <ServiceCard service={service} />
+            </StaggerItem>
           ))}
-        </div>
-      </section>
+        </StaggerContainer>
+      </AnimatedSection>
 
       <CtaBanner
         title="Not sure which service you need?"

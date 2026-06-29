@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Phone, Mail, MapPin, Clock, Building2 } from "lucide-react";
 import { PageHero } from "@/components/page-hero";
 import { ContactForm } from "@/components/contact-form";
+import { AnimatedSection, FadeIn } from "@/components/scroll-fade";
 import { contact, site } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -21,15 +22,15 @@ export default function ContactPage() {
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact Us" }]}
       />
 
-      <section className="section-padding bg-white">
+      <AnimatedSection className="section-padding bg-white">
         <div className="container-narrow grid gap-12 lg:grid-cols-5">
-          <div className="lg:col-span-3">
+          <FadeIn variant="fade-right" className="lg:col-span-3">
             <h2 className="mb-2">{contact.form.title}</h2>
             <p className="mb-8 text-text-muted">{contact.form.description}</p>
             <ContactForm />
-          </div>
+          </FadeIn>
 
-          <div className="lg:col-span-2">
+          <FadeIn variant="fade-left" delay={0.1} className="lg:col-span-2">
             <h2 className="mb-6">Get in touch</h2>
             <div className="space-y-5">
               <ContactItem icon={<Phone className="h-5 w-5 text-brand" />} label="Call Us">
@@ -61,9 +62,9 @@ export default function ContactPage() {
                 loading="lazy"
               />
             </div>
-          </div>
+          </FadeIn>
         </div>
-      </section>
+      </AnimatedSection>
     </>
   );
 }

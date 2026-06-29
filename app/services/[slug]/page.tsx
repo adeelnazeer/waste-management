@@ -4,6 +4,12 @@ import { notFound } from "next/navigation";
 import { CheckCircle, Phone, ListChecks } from "lucide-react";
 import { PageHero } from "@/components/page-hero";
 import { CtaBanner } from "@/components/cta-banner";
+import {
+  AnimatedSection,
+  FadeIn,
+  StaggerContainer,
+  StaggerItem,
+} from "@/components/scroll-fade";
 import { getServiceBySlug, getServiceSlugs, formatPrice, site } from "@/lib/content";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -39,76 +45,81 @@ export default async function ServiceDetailPage({ params }: Props) {
         ]}
       />
 
-      <section className="section-padding bg-white">
+      <AnimatedSection className="section-padding bg-white">
         <div className="container-narrow grid gap-12 lg:grid-cols-3">
-          <div className="lg:col-span-2">
+          <FadeIn variant="fade-right" className="lg:col-span-2">
             <p className="text-lg leading-relaxed text-text-muted">{content.intro}</p>
 
             <h2 className="mt-10 mb-6">What we offer</h2>
-            <ul className="grid gap-3 sm:grid-cols-2">
+            <StaggerContainer className="grid gap-3 sm:grid-cols-2">
               {content.features.map((f) => (
-                <li key={f} className="flex items-start gap-2 text-sm">
-                  <CheckCircle className="mt-0.5 h-4 w-4 shrink-0 text-brand" />
-                  {f}
-                </li>
+                <StaggerItem key={f}>
+                  <div className="flex items-start gap-2 text-sm">
+                    <CheckCircle className="mt-0.5 h-4 w-4 shrink-0 text-brand" />
+                    {f}
+                  </div>
+                </StaggerItem>
               ))}
-            </ul>
+            </StaggerContainer>
 
             <h2 className="mt-10 mb-6">Options & pricing</h2>
-            <div className="space-y-3">
+            <StaggerContainer className="space-y-3">
               {content.options.map((opt) => (
-                <div
-                  key={opt.name}
-                  className="card flex items-center justify-between gap-4 p-5"
-                >
-                  <div>
-                    <h3 className="text-base">{opt.name}</h3>
-                    <p className="mt-1 text-sm text-text-muted">{opt.description}</p>
+                <StaggerItem key={opt.name}>
+                  <div className="card flex items-center justify-between gap-4 p-5">
+                    <div>
+                      <h3 className="text-base">{opt.name}</h3>
+                      <p className="mt-1 text-sm text-text-muted">{opt.description}</p>
+                    </div>
+                    <div className="shrink-0 text-right">
+                      <p className="text-xs text-text-muted">from</p>
+                      <p className="text-lg font-extrabold text-brand">{formatPrice(opt.price)}</p>
+                    </div>
                   </div>
-                  <div className="shrink-0 text-right">
-                    <p className="text-xs text-text-muted">from</p>
-                    <p className="text-lg font-extrabold text-brand">{formatPrice(opt.price)}</p>
-                  </div>
-                </div>
+                </StaggerItem>
               ))}
-            </div>
+            </StaggerContainer>
 
             <div className="mt-10 card bg-surface-muted p-6">
               <div className="mb-4 flex items-center gap-2">
                 <ListChecks className="h-5 w-5 text-brand" />
                 <h3 className="text-base">{workflow.title}</h3>
               </div>
-              <ol className="grid gap-2 sm:grid-cols-2">
+              <StaggerContainer className="grid gap-2 sm:grid-cols-2">
                 {workflow.steps.map((step, i) => (
-                  <li key={step} className="flex items-center gap-2 text-sm text-text-muted">
-                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand text-xs font-bold text-white">
-                      {i + 1}
-                    </span>
-                    {step}
-                  </li>
+                  <StaggerItem key={step}>
+                    <div className="flex items-center gap-2 text-sm text-text-muted">
+                      <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand text-xs font-bold text-white">
+                        {i + 1}
+                      </span>
+                      {step}
+                    </div>
+                  </StaggerItem>
                 ))}
-              </ol>
+              </StaggerContainer>
             </div>
-          </div>
+          </FadeIn>
 
-          <aside>
-            <div className="sticky top-28 card bg-surface-muted p-6">
-              <p className="text-xs text-text-muted">Starting from</p>
-              <p className="text-3xl font-extrabold text-brand">{formatPrice(service.fromPrice)}</p>
-              <p className="mb-5 mt-1 text-sm text-text-muted">
-                Book online in minutes — secure payment with Stripe.
-              </p>
-              <Link href={`/book?service=${service.slug}`} className="btn-primary mb-3 w-full">
-                Book {service.title}
-              </Link>
-              <a href={telHref} className="btn-outline flex w-full items-center justify-center gap-2">
-                <Phone className="h-4 w-4" />
-                {site.phoneDisplay}
-              </a>
-            </div>
-          </aside>
+          <FadeIn variant="fade-left" delay={0.12}>
+            <aside>
+              <div className="sticky top-28 card bg-surface-muted p-6">
+                <p className="text-xs text-text-muted">Starting from</p>
+                <p className="text-3xl font-extrabold text-brand">{formatPrice(service.fromPrice)}</p>
+                <p className="mb-5 mt-1 text-sm text-text-muted">
+                  Book online in minutes — secure payment with Stripe.
+                </p>
+                <Link href={`/book?service=${service.slug}`} className="btn-primary mb-3 w-full">
+                  Book {service.title}
+                </Link>
+                <a href={telHref} className="btn-outline flex w-full items-center justify-center gap-2">
+                  <Phone className="h-4 w-4" />
+                  {site.phoneDisplay}
+                </a>
+              </div>
+            </aside>
+          </FadeIn>
         </div>
-      </section>
+      </AnimatedSection>
 
       <CtaBanner
         title={`Need ${service.title.toLowerCase()}?`}

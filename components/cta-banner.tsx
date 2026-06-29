@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Phone } from "lucide-react";
+import { AnimatedSection, FadeIn } from "@/components/scroll-fade";
 import { site } from "@/lib/content";
 
 export function CtaBanner({
@@ -13,8 +14,8 @@ export function CtaBanner({
 }) {
   const telHref = `tel:${site.phone.replace(/\s/g, "")}`;
   return (
-    <section className="bg-brand">
-      <div className="container-narrow flex flex-col items-center justify-between gap-6 px-4 py-12 text-center md:flex-row md:px-8 md:text-left">
+    <AnimatedSection className="bg-brand">
+      <FadeIn className="container-narrow flex flex-col items-center justify-between gap-6 px-4 py-12 text-center md:flex-row md:px-8 md:text-left">
         <div>
           <h2 className="!text-white">{title}</h2>
           <p className="mt-2 max-w-xl text-white/90">{description}</p>
@@ -28,7 +29,7 @@ export function CtaBanner({
             {site.phoneDisplay}
           </a>
         </div>
-      </div>
-    </section>
+      </FadeIn>
+    </AnimatedSection>
   );
 }

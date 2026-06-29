@@ -13,6 +13,7 @@
     "@types/nodemailer": "^7.0.5",
     "aos": "^2.3.4",
     "formik": "^2.4.9",
+    "framer-motion": "^12.42.0",
     "lucide-react": "^0.561.0",
     "next": "16.0.10",
     "nodemailer": "^7.0.12",

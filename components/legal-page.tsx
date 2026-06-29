@@ -1,4 +1,5 @@
 import { PageHero } from "@/components/page-hero";
+import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/scroll-fade";
 
 type LegalContent = {
   title: string;
@@ -14,16 +15,16 @@ export function LegalPage({ content }: { content: LegalContent }) {
         subtitle={content.updated}
         breadcrumbs={[{ label: "Home", href: "/" }, { label: content.title }]}
       />
-      <section className="section-padding bg-white">
-        <div className="container-narrow max-w-3xl space-y-8">
+      <AnimatedSection className="section-padding bg-white">
+        <StaggerContainer className="container-narrow max-w-3xl space-y-8">
           {content.sections.map((s) => (
-            <div key={s.heading}>
+            <StaggerItem key={s.heading}>
               <h2 className="text-xl">{s.heading}</h2>
               <p className="mt-3 text-text-muted leading-relaxed">{s.body}</p>
-            </div>
+            </StaggerItem>
           ))}
-        </div>
-      </section>
+        </StaggerContainer>
+      </AnimatedSection>
     </>
   );
 }

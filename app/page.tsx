@@ -1,10 +1,19 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import { Phone, Star, CheckCircle, ShieldCheck } from "lucide-react";
+import { Phone, Star, ShieldCheck } from "lucide-react";
 import { ServiceCard } from "@/components/service-card";
 import { PostcodeChecker } from "@/components/postcode-checker";
 import { UkMap } from "@/components/uk-map";
 import { Icon } from "@/components/icon";
+import {
+  AnimatedSection,
+  FadeIn,
+  RevealHeader,
+  StaggerContainer,
+  StaggerItem,
+} from "@/components/scroll-fade";
 import { site, home, services, testimonials, areas } from "@/lib/content";
 
 export default function HomePage() {
@@ -13,10 +22,9 @@ export default function HomePage() {
 
   return (
     <>
-      {/* Hero */}
-      <section className="gradient-hero relative overflow-hidden text-white">
+      <AnimatedSection className="gradient-hero relative overflow-hidden text-white">
         <div className="container-narrow relative grid items-center gap-10 px-4 py-16 md:px-8 lg:grid-cols-2 lg:py-24">
-          <div>
+          <FadeIn immediate variant="fade-right">
             <span className="inline-flex items-center gap-2 rounded-full border border-brand/40 bg-brand/15 px-4 py-1.5 text-xs font-semibold text-brand-light">
               <ShieldCheck className="h-4 w-4" />
               {hero.badge}
@@ -34,9 +42,9 @@ export default function HomePage() {
                 {hero.ctaSecondary.label}
               </Link>
             </div>
-          </div>
+          </FadeIn>
 
-          <div className="relative">
+          <FadeIn immediate variant="fade-left" delay={0.15}>
             <div className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
               <Image
                 src={hero.image}
@@ -47,14 +55,13 @@ export default function HomePage() {
                 className="h-full w-full object-cover"
               />
             </div>
-          </div>
+          </FadeIn>
         </div>
 
-        {/* Trust badges */}
-        <div className="border-t border-white/10 bg-black/40">
-          <div className="container-narrow grid grid-cols-2 gap-px px-4 md:px-8 lg:grid-cols-4">
-            {hero.trustBadges.map((b) => (
-              <div key={b.title} className="flex items-center gap-3 py-5">
+        <StaggerContainer className="container-narrow grid grid-cols-2 gap-px border-t border-white/10 bg-black/40 px-4 md:px-8 lg:grid-cols-4">
+          {hero.trustBadges.map((b) => (
+            <StaggerItem key={b.title}>
+              <div className="flex items-center gap-3 py-5">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand/15">
                   <Icon name={b.icon} className="h-5 w-5 text-brand-light" />
                 </div>
@@ -63,15 +70,14 @@ export default function HomePage() {
                   <p className="text-xs text-white/50">{b.text}</p>
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
+            </StaggerItem>
+          ))}
+        </StaggerContainer>
+      </AnimatedSection>
 
-      {/* Services */}
-      <section className="section-padding bg-surface-muted">
+      <AnimatedSection className="section-padding bg-surface-muted">
         <div className="container-narrow">
-          <div className="mb-10 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
+          <RevealHeader className="mb-10 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
             <div>
               <span className="section-label">{servicesSection.label}</span>
               <h2>{servicesSection.title}</h2>
@@ -80,41 +86,43 @@ export default function HomePage() {
             <Link href="/services" className="btn-ghost shrink-0 !py-2.5 !text-sm">
               All Services
             </Link>
-          </div>
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+          </RevealHeader>
+          <StaggerContainer className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
             {services.map((service) => (
-              <ServiceCard key={service.slug} service={service} />
+              <StaggerItem key={service.slug}>
+                <ServiceCard service={service} />
+              </StaggerItem>
             ))}
-          </div>
+          </StaggerContainer>
         </div>
-      </section>
+      </AnimatedSection>
 
-      {/* Why Choose Us */}
-      <section className="section-padding bg-white">
+      <AnimatedSection className="section-padding bg-white">
         <div className="container-narrow">
-          <div className="mb-10 text-center">
+          <RevealHeader align="center" className="mb-10">
             <span className="section-label">{whyChoose.label}</span>
             <h2>{whyChoose.title}</h2>
             <p className="mx-auto mt-3 max-w-2xl text-text-muted">{whyChoose.description}</p>
-          </div>
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+          </RevealHeader>
+          <StaggerContainer className="grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
             {whyChoose.items.map((item) => (
-              <div key={item.title} className="card card-hover p-6 text-center">
-                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-soft">
-                  <Icon name={item.icon} className="h-6 w-6 text-brand" />
+              <StaggerItem key={item.title}>
+                <div className="card card-hover h-full p-6 text-center">
+                  <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-soft">
+                    <Icon name={item.icon} className="h-6 w-6 text-brand" />
+                  </div>
+                  <h3 className="text-base">{item.title}</h3>
+                  <p className="mt-2 text-sm text-text-muted">{item.text}</p>
                 </div>
-                <h3 className="text-base">{item.title}</h3>
-                <p className="mt-2 text-sm text-text-muted">{item.text}</p>
-              </div>
+              </StaggerItem>
             ))}
-          </div>
+          </StaggerContainer>
         </div>
-      </section>
+      </AnimatedSection>
 
-      {/* About preview + stats */}
-      <section className="section-padding bg-surface-muted">
+      <AnimatedSection className="section-padding bg-surface-muted">
         <div className="container-narrow grid items-center gap-12 lg:grid-cols-2">
-          <div>
+          <FadeIn variant="fade-right">
             <span className="section-label">{about.label}</span>
             <h2>{about.title}</h2>
             <div className="divider-accent !mx-0 mt-4" />
@@ -123,41 +131,44 @@ export default function HomePage() {
                 {p}
               </p>
             ))}
-            <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
+            <StaggerContainer className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
               {about.stats.map((s) => (
-                <div key={s.label}>
-                  <p className="text-2xl font-extrabold text-brand md:text-3xl">{s.value}</p>
-                  <p className="mt-1 text-xs text-text-muted">{s.label}</p>
-                </div>
+                <StaggerItem key={s.label}>
+                  <div>
+                    <p className="text-2xl font-extrabold text-brand md:text-3xl">{s.value}</p>
+                    <p className="mt-1 text-xs text-text-muted">{s.label}</p>
+                  </div>
+                </StaggerItem>
               ))}
-            </div>
+            </StaggerContainer>
             <Link href={about.cta.href} className="btn-primary mt-8">
               {about.cta.label}
             </Link>
-          </div>
+          </FadeIn>
 
-          <div className="relative">
-            <div className="overflow-hidden rounded-2xl border border-line shadow-lg">
-              <Image
-                src={hero.image}
-                alt="Eco-friendly waste collection"
-                width={800}
-                height={600}
-                className="h-full w-full object-cover"
-              />
+          <FadeIn variant="fade-left" delay={0.1}>
+            <div className="relative">
+              <div className="overflow-hidden rounded-2xl border border-line shadow-lg">
+                <Image
+                  src={hero.image}
+                  alt="Eco-friendly waste collection"
+                  width={800}
+                  height={600}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-5 -left-5 rounded-xl bg-brand px-6 py-4 text-white shadow-xl">
+                <p className="text-3xl font-extrabold">{about.badge.value}</p>
+                <p className="text-xs font-medium text-white/80">{about.badge.label}</p>
+              </div>
             </div>
-            <div className="absolute -bottom-5 -left-5 rounded-xl bg-brand px-6 py-4 text-white shadow-xl">
-              <p className="text-3xl font-extrabold">{about.badge.value}</p>
-              <p className="text-xs font-medium text-white/80">{about.badge.label}</p>
-            </div>
-          </div>
+          </FadeIn>
         </div>
-      </section>
+      </AnimatedSection>
 
-      {/* Areas We Cover */}
-      <section className="section-padding bg-white">
+      <AnimatedSection className="section-padding bg-white">
         <div className="container-narrow grid items-center gap-12 lg:grid-cols-2">
-          <div>
+          <FadeIn variant="fade-up">
             <span className="section-label">{home.areas.label}</span>
             <h2>{home.areas.title}</h2>
             <p className="mt-3 text-text-muted">{home.areas.description}</p>
@@ -166,54 +177,55 @@ export default function HomePage() {
             </div>
             <div className="mt-8">
               <p className="mb-3 text-sm font-semibold text-black">Popular Areas</p>
-              <div className="flex flex-wrap gap-2">
+              <StaggerContainer className="flex flex-wrap gap-2">
                 {areas.popular.slice(0, 8).map((a) => (
-                  <span
-                    key={a.name}
-                    className="rounded-full border border-line bg-surface-muted px-3 py-1.5 text-sm text-text-muted"
-                  >
-                    {a.name}
-                  </span>
+                  <StaggerItem key={a.name}>
+                    <span className="inline-block rounded-full border border-line bg-surface-muted px-3 py-1.5 text-sm text-text-muted">
+                      {a.name}
+                    </span>
+                  </StaggerItem>
                 ))}
-              </div>
+              </StaggerContainer>
               <Link href="/areas" className="mt-4 inline-block text-sm font-semibold text-brand hover:underline">
                 View all areas →
               </Link>
             </div>
-          </div>
-          <UkMap />
+          </FadeIn>
+          <FadeIn variant="fade-left" delay={0.12}>
+            <UkMap />
+          </FadeIn>
         </div>
-      </section>
+      </AnimatedSection>
 
-      {/* Reviews */}
-      <section className="section-padding bg-surface-muted">
+      <AnimatedSection className="section-padding bg-surface-muted">
         <div className="container-narrow">
-          <div className="mb-10 text-center">
+          <RevealHeader align="center" className="mb-10">
             <span className="section-label">{reviewsSection.label}</span>
             <h2>{reviewsSection.title}</h2>
-          </div>
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          </RevealHeader>
+          <StaggerContainer className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {testimonials.map((t) => (
-              <blockquote key={t.name} className="card p-6">
-                <div className="mb-3 flex gap-0.5">
-                  {Array.from({ length: t.rating }).map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-brand text-brand" />
-                  ))}
-                </div>
-                <p className="mb-4 text-sm leading-relaxed text-text-muted">&ldquo;{t.quote}&rdquo;</p>
-                <footer>
-                  <p className="text-sm font-semibold text-black">{t.name}</p>
-                  <p className="text-xs text-text-muted">{t.location}</p>
-                </footer>
-              </blockquote>
+              <StaggerItem key={t.name}>
+                <blockquote className="card h-full p-6">
+                  <div className="mb-3 flex gap-0.5">
+                    {Array.from({ length: t.rating }).map((_, i) => (
+                      <Star key={i} className="h-4 w-4 fill-brand text-brand" />
+                    ))}
+                  </div>
+                  <p className="mb-4 text-sm leading-relaxed text-text-muted">&ldquo;{t.quote}&rdquo;</p>
+                  <footer>
+                    <p className="text-sm font-semibold text-black">{t.name}</p>
+                    <p className="text-xs text-text-muted">{t.location}</p>
+                  </footer>
+                </blockquote>
+              </StaggerItem>
             ))}
-          </div>
+          </StaggerContainer>
         </div>
-      </section>
+      </AnimatedSection>
 
-      {/* Final CTA */}
-      <section className="bg-brand">
-        <div className="container-narrow flex flex-col items-center justify-between gap-6 px-4 py-12 text-center md:flex-row md:px-8 md:text-left">
+      <AnimatedSection className="bg-brand">
+        <FadeIn className="container-narrow flex flex-col items-center justify-between gap-6 px-4 py-12 text-center md:flex-row md:px-8 md:text-left">
           <div>
             <h2 className="!text-white">{finalCta.title}</h2>
             <p className="mt-2 max-w-xl text-white/90">{finalCta.description}</p>
@@ -227,8 +239,8 @@ export default function HomePage() {
               {site.phoneDisplay}
             </a>
           </div>
-        </div>
-      </section>
+        </FadeIn>
+      </AnimatedSection>
     </>
   );
 }

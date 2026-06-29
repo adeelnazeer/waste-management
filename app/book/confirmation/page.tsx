@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CheckCircle, Mail, Phone } from "lucide-react";
+import { AnimatedSection, FadeIn } from "@/components/scroll-fade";
 import { site } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -17,8 +18,8 @@ export default async function ConfirmationPage({
   const telHref = `tel:${site.phone.replace(/\s/g, "")}`;
 
   return (
-    <section className="section-padding bg-surface-muted">
-      <div className="container-narrow max-w-xl text-center">
+    <AnimatedSection className="section-padding bg-surface-muted">
+      <FadeIn immediate variant="fade-up" className="container-narrow max-w-xl text-center">
         <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-brand-soft">
           <CheckCircle className="h-9 w-9 text-brand" />
         </div>
@@ -55,7 +56,7 @@ export default async function ConfirmationPage({
             Email Us
           </a>
         </div>
-      </div>
-    </section>
+      </FadeIn>
+    </AnimatedSection>
   );
 }
